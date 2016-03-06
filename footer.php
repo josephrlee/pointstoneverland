@@ -1,9 +1,9 @@
 					<footer class="footer" role="contentinfo">
 						<div id="inner-footer" class="row">
-							<div class="large-8 medium-12 columns">
+							<div class="medium-6 columns">
 								<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
 	    				</div>
-							<div class="large-4 medium-12 columns">
+							<div class="medium-6 columns">
 								<nav role="navigation">
 									<?php joints_footer_links(); ?>
 								</nav>
