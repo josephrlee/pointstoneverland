@@ -1021,7 +1021,7 @@ button {
   display: none !important; }
 
 .row {
-  max-width: 75rem;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto; }
   .row::before, .row::after {
@@ -1039,12 +1039,12 @@ button {
     padding-left: 0;
     padding-right: 0; }
   .row .row {
-    margin-left: -0.625rem;
-    margin-right: -0.625rem; }
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem; }
     @media screen and (min-width: 40em) {
       .row .row {
-        margin-left: -0.9375rem;
-        margin-right: -0.9375rem; } }
+        margin-left: -1.875rem;
+        margin-right: -1.875rem; } }
     .row .row.collapse {
       margin-left: 0;
       margin-right: 0; }
@@ -1057,12 +1057,12 @@ button {
 .column, .columns {
   width: 100%;
   float: left;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem; }
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
   @media screen and (min-width: 40em) {
     .column, .columns {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; } }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
@@ -1325,8 +1325,8 @@ button {
   margin-right: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem; }
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
 
 .small-centered {
   float: none;
@@ -1535,8 +1535,8 @@ button {
     margin-left: 0;
     margin-right: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; }
   .medium-centered {
     float: none;
     margin-left: auto;
@@ -1743,8 +1743,8 @@ button {
     margin-left: 0;
     margin-right: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; }
   .large-centered {
     float: none;
     margin-left: auto;
@@ -1865,7 +1865,7 @@ a {
     border: 0; }
 
 hr {
-  max-width: 75rem;
+  max-width: 90%;
   height: 0;
   border-right: 0;
   border-top: 0;
@@ -3671,7 +3671,7 @@ body.is-reveal-open {
   @media screen and (min-width: 40em) {
     .reveal {
       width: 600px;
-      max-width: 75rem; } }
+      max-width: 90%; } }
   @media screen and (min-width: 40em) {
     .reveal .reveal {
       left: auto;
@@ -3682,15 +3682,15 @@ body.is-reveal-open {
   @media screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;
-      max-width: 75rem; } }
+      max-width: 90%; } }
   @media screen and (min-width: 40em) {
     .reveal.small {
       width: 50%;
-      max-width: 75rem; } }
+      max-width: 90%; } }
   @media screen and (min-width: 40em) {
     .reveal.large {
       width: 90%;
-      max-width: 75rem; } }
+      max-width: 90%; } }
   .reveal.full {
     top: 0;
     left: 0;
@@ -4387,7 +4387,16 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  margin-top: 1em; }
+  margin-top: 1em;
+  padding: 1rem 0;
+  background: #e6e6e6; }
+  .footer .copyright {
+    margin-bottom: 0; }
+  .footer .menu a {
+    padding: 0 1rem;
+    line-height: 1.6; }
+    .footer .menu a:first-child {
+      padding-left: 0; }
 
 /*********************
 FOUNDATION STYLES
