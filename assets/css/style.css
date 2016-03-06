@@ -4119,10 +4119,9 @@ table.hover tr:nth-of-type(even):hover {
 .top-bar-right {
   width: 100%; }
 
-@media screen and (min-width: 40em) {
-  .top-bar-left,
-  .top-bar-right {
-    width: auto; } }
+.top-bar-left,
+.top-bar-right {
+  width: auto; }
 
 .top-bar-title {
   float: left;
@@ -4145,13 +4144,23 @@ GENERAL STYLES
 /*********************
 LINK STYLES
 *********************/
-a:link, a:visited:link {
+a:link,
+a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
   text-decoration: none; }
 
 /*********************
@@ -4166,10 +4175,14 @@ NAVIGATION STYLES
 .top-bar .title-area {
   z-index: 1; }
 
+@media screen and (max-width: 39.9375em) {
+  .top-bar #menu-primary-navigation {
+    display: none; } }
+
 .off-canvas-list ul {
   margin-left: 0; }
   .off-canvas-list ul li a {
-    border-bottom: 0px; }
+    border-bottom: 0; }
   .off-canvas-list ul .dropdown {
     margin-left: 20px; }
 
@@ -4177,11 +4190,11 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  padding: 1rem 0rem; }
+  padding: 1rem 0; }
 
 .page-title .vcard {
-  border: 0px;
-  padding: 0px; }
+  border: 0;
+  padding: 0; }
 
 .byline {
   color: #999; }
@@ -4190,23 +4203,27 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto; }
 
-.entry-content .alignleft, .entry-content img.alignleft {
+.entry-content .alignleft,
+.entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left; }
 
-.entry-content .alignright, .entry-content img.alignright {
+.entry-content .alignright,
+.entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right; }
 
-.entry-content .aligncenter, .entry-content img.aligncenter {
+.entry-content .aligncenter,
+.entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
   display: block;
   clear: both; }
 
-.entry-content video, .entry-content object {
+.entry-content video,
+.entry-content object {
   max-width: 100%;
   height: auto; }
 
@@ -4262,10 +4279,10 @@ PAGE NAVI STYLES
 COMMENT STYLES
 *********************/
 #comments .commentlist {
-  margin-left: 0px; }
+  margin-left: 0; }
 
 #respond ul {
-  margin-left: 0px; }
+  margin-left: 0; }
 
 .commentlist li {
   position: relative;
@@ -4392,11 +4409,16 @@ FOOTER STYLES
   background: #e6e6e6; }
   .footer .copyright {
     margin-bottom: 0; }
-  .footer .menu a {
-    padding: 0 1rem;
-    line-height: 1.6; }
-    .footer .menu a:first-child {
-      padding-left: 0; }
+  .footer .menu {
+    float: right; }
+    .footer .menu a {
+      padding: 0 1rem;
+      line-height: 1.6; }
+      .footer .menu a:first-child {
+        padding-left: 0; }
+  @media screen and (max-width: 39.9375em) {
+    .footer .menu {
+      float: left; } }
 
 /*********************
 FOUNDATION STYLES
