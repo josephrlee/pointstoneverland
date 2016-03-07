@@ -415,11 +415,11 @@ FOOTER STYLES
       }
     }
   }
-	@include breakpoint(small down) {
-		.menu {
-			float: left;
-		}
-	}
+  @include breakpoint(small down) {
+    .menu {
+      float: left;
+    }
+  }
 }
 /*********************
 FOUNDATION STYLES
@@ -431,4 +431,37 @@ PLUGIN STYLES
 .gform_body ul {
   list-style: none outside none;
   margin: 0;
+}
+/*********************
+TOP 10
+*********************/
+#sidebar {
+  p {
+    display: none;
+  }
+  .top-10 {
+    border: solid 1px #ddd;
+		h3 {
+			padding: 1rem 1rem 0;
+			margin-bottom: 0;
+		}
+    ol {
+      list-style-position: inside;
+      margin: 0;
+      padding: .5rem 1rem;
+      h4 {
+        font-size: 16px;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+/*********************
+CREIDT CARD STYLES
+*********************/
+.card-name {
+  width: 30%;
+  vertical-align: top;
 }

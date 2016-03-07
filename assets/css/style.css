@@ -4430,6 +4430,33 @@ PLUGIN STYLES
   list-style: none outside none;
   margin: 0; }
 
+/*********************
+TOP 10
+*********************/
+#sidebar p {
+  display: none; }
+
+#sidebar .top-10 {
+  border: solid 1px #ddd; }
+  #sidebar .top-10 h3 {
+    padding: 1rem 1rem 0;
+    margin-bottom: 0; }
+  #sidebar .top-10 ol {
+    list-style-position: inside;
+    margin: 0;
+    padding: .5rem 1rem; }
+    #sidebar .top-10 ol h4 {
+      font-size: 16px; }
+    #sidebar .top-10 ol p {
+      display: none; }
+
+/*********************
+CREIDT CARD STYLES
+*********************/
+.card-name {
+  width: 30%;
+  vertical-align: top; }
+
 /******************************************************************
 
 Stylesheet: Retina Screens & Devices Stylesheet
