@@ -4434,7 +4434,7 @@ PLUGIN STYLES
 TOP 10
 *********************/
 #sidebar p {
-  display: none; }
+  font-size: 12px; }
 
 #sidebar .top-10 {
   border: solid 1px #ddd; }
