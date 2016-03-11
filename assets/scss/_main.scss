@@ -436,15 +436,15 @@ PLUGIN STYLES
 TOP 10
 *********************/
 #sidebar {
-  p {
-    font-size: 12px;
-  }
   .top-10 {
     border: solid 1px #ddd;
 		h3 {
 			padding: 1rem 1rem 0;
 			margin-bottom: 0;
 		}
+    p {
+      display: none;
+    }
     ol {
       list-style-position: inside;
       margin: 0;
