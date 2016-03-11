@@ -2,7 +2,9 @@
 
 	<div id="content">
 
-		<?php echo do_shortcode('[recent_post_slider design="design-1"]'); ?>
+		<?php echo do_shortcode('[recent_post_slider limit="4" design="design-1" show_author="false" show_category_name="true" show_content="true" show_date="true" dots="true" arrows="true" autoplay="true" autoplay_interval="5000" speed="1000" content_words_limit="20"]
+
+'); ?>
 
 		<div id="inner-content" class="row">
 
