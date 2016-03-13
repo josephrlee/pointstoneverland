@@ -1,12 +1,13 @@
-<div id="sidebar" class="sidebar large-4 medium-4 columns" role="complementary">
+<div id="sidebar" class="sidebar large-5 medium-6 columns" role="complementary">
 
 	<?php if (is_active_sidebar('sidebar')) : ?>
 
-		<?php dynamic_sidebar('sidebar'); ?>
+
 		<aside class="top-10">
 			<h3>Top 10</h3>
 			<?php $id = 9; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
 		</aside>
+		<?php dynamic_sidebar('sidebar'); ?>
 	<?php else : ?>
 
 
