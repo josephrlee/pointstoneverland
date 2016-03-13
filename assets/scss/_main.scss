@@ -6,6 +6,15 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+.off-canvas-wrapper {
+  background: $light-gray;
+}
+.row {
+  max-width: 100%;
+  @include breakpoint(large up) {
+    max-width: 90%;
+  }
+}
 /*********************
 LINK STYLES
 *********************/
@@ -20,31 +29,21 @@ a:visited {
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
   // Removing text decoration from all headline links
   a {
     text-decoration: none;
   }
 }
-h1,
-.h1 {}
-h2,
-.h2 {}
-h3,
-.h3 {}
-h4,
-.h4 {}
-h5,
-.h5 {}
+h1, .h1 {}
+h2, .h2 {}
+h3, .h3 {}
+h4, .h4 {}
+h5, .h5 {}
 /*********************
 HEADER STYLES
 *********************/
@@ -57,13 +56,49 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 .top-bar {
+  height: 8rem;
   .title-area {
     z-index: 1;
+  }
+  .logo {
+    @include breakpoint(large up) {
+
+    }
+  }
+  .top-bar-right {
+    padding-top: 2.5rem;
+    @include breakpoint(large up) {
+
+    }
+    .primary-menu {
+      padding-right: 2rem;
+      @include breakpoint(large up) {
+        padding-right: 16rem;
+      }
+      li a {
+        border: solid 1px $primary-color;
+        margin-right: -1px;
+      }
+      .is-dropdown-submenu {
+        left: 0;
+        top: 2.45rem;
+        margin-left: 0 !important;
+        a {
+          border: none;
+        }
+      }
+    }
   }
   @include breakpoint(small down) {
     #menu-primary-navigation {
       display: none;
     }
+  }
+}
+.off-canvas {
+  .search-form {
+    width: 91%;
+    margin: 1rem;
   }
 }
 .off-canvas-list {
@@ -84,7 +119,7 @@ POSTS & CONTENT STYLES
 *********************/
 #content {
   #inner-content {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 }
 .single-title,
@@ -378,7 +413,8 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.sidebar {}
+.sidebar {
+}
 #searchsubmit {}
 .widgettitle {}
 .widget {
@@ -438,17 +474,20 @@ TOP 10
 #sidebar {
   .top-10 {
     border: solid 1px #ddd;
+    margin-bottom: 2rem;
+    padding: 1rem;
 		h3 {
-			padding: 1rem 1rem 0;
 			margin-bottom: 0;
 		}
-    p {
+    p.intro {
+      display: block;
+    }
+    p:nth-of-type(2) {
       display: none;
     }
     ol {
       list-style-position: inside;
       margin: 0;
-      padding: .5rem 1rem;
       h4 {
         font-size: 16px;
       }
