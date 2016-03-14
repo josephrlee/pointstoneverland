@@ -4396,7 +4396,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: transparent; }
   .top-bar input {
     width: 200px;
     margin-right: 1rem; }
@@ -4452,6 +4452,10 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+.off-canvas-content {
+  background: url("/wp-content/themes/pointstoneverland/assets/images/banner-bw.png") no-repeat center top;
+  background-size: contain; }
+
 .off-canvas-wrapper {
   background: #e6e6e6; }
 
@@ -4525,8 +4529,12 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content #inner-content {
-  padding: 2rem 0; }
+#content {
+  padding-top: 380px; }
+  #content #inner-content {
+    padding: 2rem 0; }
+  #content #main p {
+    font-size: 120%; }
 
 .page-title .vcard {
   border: 0;

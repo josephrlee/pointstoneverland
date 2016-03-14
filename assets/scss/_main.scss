@@ -6,6 +6,13 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+
+$img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path for assets
+
+.off-canvas-content {
+  background: url('#{$img-path}/banner-bw.png') no-repeat center top;
+  background-size: contain;
+}
 .off-canvas-wrapper {
   background: $light-gray;
 }
@@ -118,8 +125,14 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content {
+  padding-top: 380px;
   #inner-content {
     padding: 2rem 0;
+  }
+  #main {
+    p {
+      font-size: 120%;
+    }
   }
 }
 .single-title,
