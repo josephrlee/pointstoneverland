@@ -10,8 +10,16 @@ GENERAL STYLES
 $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path for assets
 
 .off-canvas-content {
-  background: url('#{$img-path}/banner-bw.png') no-repeat center top;
+  background-image: url('#{$img-path}/hero-banner-small.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
   background-size: contain;
+  @include breakpoint(medium up) {
+    background-image: url('#{$img-path}/hero-banner-medium.jpg');
+  }
+  @include breakpoint(large up) {
+    background-image: url('#{$img-path}/hero-banner-large.jpg');
+  }
 }
 .off-canvas-wrapper {
   background: $light-gray;
@@ -64,27 +72,47 @@ NAVIGATION STYLES
 *********************/
 .top-bar {
   height: 8rem;
+  padding-top: 4%;
   .title-area {
     z-index: 1;
   }
   .logo {
-    @include breakpoint(large up) {
-
+    display: block;
+    padding: .5rem;
+    @include breakpoint(medium up) {
+      padding: .7rem 1rem;
+    }
+    img {
+      width: 24vw;
+      @include breakpoint(medium up) {
+        width: 18vw;
+      }
+      @include breakpoint(large up) {
+        width: 14vw;
+      }
     }
   }
   .top-bar-right {
-    padding-top: 2.5rem;
+    padding-top: 6%;
     @include breakpoint(large up) {
-
+      padding-top: 4%;
     }
     .primary-menu {
       padding-right: 2rem;
+      @include breakpoint(medium up) {
+        padding-right: 12vw;
+      }
       @include breakpoint(large up) {
-        padding-right: 16rem;
+        padding-right: 28vw;
       }
       li a {
         border: solid 1px $primary-color;
         margin-right: -1px;
+        background: $light-gray;
+        font-weight: bold;
+        @include breakpoint(small up){
+          padding: .7rem 1rem;
+        }
       }
       .is-dropdown-submenu {
         left: 0;
@@ -103,6 +131,9 @@ NAVIGATION STYLES
   }
 }
 .off-canvas {
+  .menu > li > a {
+    padding: .75rem 1rem;
+  }
   .search-form {
     width: 91%;
     margin: 1rem;
@@ -125,7 +156,16 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  padding-top: 380px;
+  padding-top: 8vw;
+  @include breakpoint(medium up) {
+    padding-top: 12vw;
+  }
+  @include breakpoint(large up) {
+    padding-top: 16vw;
+  }
+  @include breakpoint(xlarge up) {
+    padding-top: 20vw;
+  }
   #inner-content {
     padding: 2rem 0;
   }
@@ -133,6 +173,9 @@ POSTS & CONTENT STYLES
     p {
       font-size: 120%;
     }
+  }
+  #sidebar {
+      padding-top: 4vw;
   }
 }
 .single-title,
