@@ -4577,8 +4577,10 @@ POSTS & CONTENT STYLES
       padding-top: 18vw; } }
   #content #inner-content {
     padding: 2rem 0; }
-  #content #main p {
-    font-size: 120%; }
+  #content #main {
+    padding-top: 2vw; }
+    #content #main p {
+      font-size: 120%; }
   #content #sidebar {
     padding-top: 4vw; }
 
