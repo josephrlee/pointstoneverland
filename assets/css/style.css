@@ -4850,9 +4850,17 @@ TOP 10
 /*********************
 CREIDT CARD STYLES
 *********************/
+.card-name, .card-details {
+  padding: 1rem; }
+
 .card-name {
-  width: 30%;
   vertical-align: top; }
+  @media screen and (min-width: 30em) {
+    .card-name {
+      width: 32%; } }
+  .card-name img {
+    width: 100%;
+    max-width: 240px; }
 
 /******************************************************************
 
