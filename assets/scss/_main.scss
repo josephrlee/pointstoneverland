@@ -251,6 +251,13 @@ POSTS & CONTENT STYLES
 .post-password-form input[type="submit"] {
   @include button;
 }
+
+// Search Results Styles
+
+.search-term {
+  font-weight: bold;
+  background-color: lighten($primary-color, 20%);
+}
 /*********************
 IMAGE GALLERY STYLES
 *********************/

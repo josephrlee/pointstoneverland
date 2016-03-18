@@ -4658,6 +4658,10 @@ POSTS & CONTENT STYLES
     background-color: #78b8c3;
     color: #fefefe; }
 
+.search-term {
+  font-weight: bold;
+  background-color: #e5f1f3; }
+
 /*********************
 IMAGE GALLERY STYLES
 *********************/
