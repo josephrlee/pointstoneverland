@@ -37,7 +37,7 @@ Template Name: Top 10
               $image = get_sub_field('image');
               ?>
               <li>
-                <h4><?php echo $title; ?> <img class="size-medium alignright" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" width="400"/></h4>
+                <h4><?php echo $title; ?> <?php if( $image ): ?><img class="size-medium alignright" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" width="400"/><?php endif; ?></h4>
                 <p><strong>What it takes</strong>: <?php echo $what_it_takes; ?></p>
                 <p><strong>Value</strong>: $<?php echo $value; ?></p>
               </li>
