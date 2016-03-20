@@ -2,11 +2,10 @@
 
 	<?php if (is_active_sidebar('sidebar')) : ?>
 
-
-		<aside class="top-10">
+		<!-- <aside class="top-10">
 			<h3>Top 10</h3>
-			<?php $id = 9; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
-		</aside>
+			<?php /* $id = 9; $p = get_page($id); echo apply_filters('the_content', $p->post_content); */?>
+		</aside> -->
 		<?php dynamic_sidebar('sidebar'); ?>
 	<?php else : ?>
 
