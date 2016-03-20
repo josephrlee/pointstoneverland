@@ -14,6 +14,7 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #f6fdff;
   @include breakpoint(medium up) {
     background-image: url('#{$img-path}/hero-banner-medium.jpg');
   }
@@ -155,6 +156,7 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
 #content {
   padding-top: 8vw;
   @include breakpoint(medium up) {
@@ -168,6 +170,28 @@ POSTS & CONTENT STYLES
   }
   #inner-content {
     padding: 2rem 0;
+  }
+  #posts-slider {
+    @include breakpoint(small up){
+      .orbit-container {
+        background: grey;
+        .orbit-slide {
+          height: 65vh;
+          a {
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            img {
+              object-fit: cover;
+              height: 65vh;
+            }
+          }
+          .orbit-caption {
+            width: auto;
+          }
+        }
+      }
+    }
   }
   #main {
     padding-top: 2vw;
@@ -200,6 +224,7 @@ POSTS & CONTENT STYLES
   img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1rem;
   }
   .alignleft,
   img.alignleft {

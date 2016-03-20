@@ -4456,7 +4456,8 @@ GENERAL STYLES
   background-image: url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-small.jpg");
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  background-color: #f6fdff; }
   @media screen and (min-width: 30em) {
     .off-canvas-content {
       background-image: url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-medium.jpg"); } }
@@ -4577,6 +4578,18 @@ POSTS & CONTENT STYLES
       padding-top: 18vw; } }
   #content #inner-content {
     padding: 2rem 0; }
+  #content #posts-slider .orbit-container {
+    background: grey; }
+    #content #posts-slider .orbit-container .orbit-slide {
+      height: 65vh; }
+      #content #posts-slider .orbit-container .orbit-slide a {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d; }
+        #content #posts-slider .orbit-container .orbit-slide a img {
+          object-fit: cover;
+          height: 65vh; }
+      #content #posts-slider .orbit-container .orbit-slide .orbit-caption {
+        width: auto; }
   #content #main {
     padding-top: 2vw; }
     #content #main p {
@@ -4593,7 +4606,8 @@ POSTS & CONTENT STYLES
 
 .entry-content img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 1rem; }
 
 .entry-content .alignleft,
 .entry-content img.alignleft {
