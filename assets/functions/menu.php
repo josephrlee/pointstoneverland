@@ -5,6 +5,7 @@ register_nav_menus(
         'main-nav' => __('Primary Menu', 'jointswp'),   // Main nav in header
         'off-canvas-menu' => __('Off Canvas Menu', 'jointswp'), // Secondary nav in footer
         'footer' => __('Footer Menu', 'jointswp'), // Footer nav
+        'social' => __('Social Menu', 'jointswp'), // Social nav
     )
 );
 
@@ -44,6 +45,19 @@ function joints_footer_links()
         'menu' => __('Footer', 'jointswp'),    // Nav name
         'menu_class' => 'menu',                          // Adding custom nav class
         'theme_location' => 'footer',             // Where it's located in the theme
+        'depth' => 0,                                   // Limit the depth of the nav
+        'fallback_cb' => '',                            // Fallback function
+    ));
+} /* End Footer Menu */
+
+// The Socail
+function joints_social_links()
+{
+    wp_nav_menu(array(
+        'container' => 'false',                              // Remove nav container
+        'menu' => __('Social Links', 'jointswp'),    // Nav name
+        'menu_class' => 'menu',                          // Adding custom nav class
+        'theme_location' => 'social',             // Where it's located in the theme
         'depth' => 0,                                   // Limit the depth of the nav
         'fallback_cb' => '',                            // Fallback function
     ));

@@ -5,7 +5,8 @@
 	    				</div>
 							<div class="medium-6 columns">
 								<nav role="navigation">
-									<?php joints_footer_links(); ?>
+									<?php joints_social_links(); ?>
+                  <?php joints_footer_links(); ?>
 								</nav>
 							</div>
 						</div> <!-- end #inner-footer -->

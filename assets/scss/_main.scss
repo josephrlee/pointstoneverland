@@ -9,6 +9,8 @@ GENERAL STYLES
 
 $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path for assets
 
+@import url("/wp-content/themes/pointstoneverland/assets/fonts/foundation-icons.css");
+
 .off-canvas-content {
   background-image: url('#{$img-path}/hero-banner-small.jpg');
   background-position: right top;
@@ -539,6 +541,54 @@ FOOTER STYLES
         padding-left: 0;
       }
     }
+    a[href*="https://www.facebook.com/pointstoneverland/"] {
+    font-size: 0;
+      &:before {
+        font-family: "foundation-icons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1.2;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        text-decoration: inherit;
+        content: "\f1c4";
+        font-size: 20px;
+      }
+    }
+    a[href*="https://twitter.com/pointsneverland/"] {
+    font-size: 0;
+      &:before {
+        font-family: "foundation-icons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1.2;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        text-decoration: inherit;
+        content: "\f1e4";
+        font-size: 20px;
+      }
+    }
+    a[href*="https://www.instagram.com/"] {
+    font-size: 0;
+      &:before {
+        font-family: "foundation-icons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1.2;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        text-decoration: inherit;
+        content: "\f1cd";
+        font-size: 20px;
+      }
+    }
   }
   @include breakpoint(small down) {
     .menu {
@@ -577,12 +627,6 @@ TOP 10
     ol {
       list-style-position: inside;
       margin: 0;
-      h4 {
-        font-size: 16px;
-      }
-      p {
-        display: none;
-      }
     }
   }
 }
