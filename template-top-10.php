@@ -27,7 +27,6 @@ Template Name: Top 10
 
 
           <?php if( have_rows('top_10_entry') ): ?>
-
             <ol class="top-10-list entry-content">
               <?php while( have_rows('top_10_entry') ): the_row();
               // vars
@@ -41,24 +40,23 @@ Template Name: Top 10
                 <p><strong>What it takes</strong>: <?php echo $what_it_takes; ?></p>
                 <p><strong>Value</strong>: $<?php echo $value; ?></p>
               </li>
-            <?php endwhile; ?>
-          </ol>
-        <?php endif; ?>
+              <?php endwhile; ?>
+            </ol>
+          <?php endif; ?>
 
+          <footer class="article-footer">
 
-        <footer class="article-footer">
+          </footer> <!-- end article footer -->
 
-        </footer> <!-- end article footer -->
+          <?php comments_template(); ?>
 
-        <?php comments_template(); ?>
+        </article> <!-- end article -->
 
-      </article> <!-- end article -->
+      <?php endwhile; endif; ?>
 
-    <?php endwhile; endif; ?>
+    </main> <!-- end #main -->
 
-  </main> <!-- end #main -->
-
-</div> <!-- end #inner-content -->
+  </div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
 
