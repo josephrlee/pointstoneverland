@@ -15,6 +15,7 @@
       <li><?php echo $title; ?></li>
     <?php endwhile; ?>
     </ol>
+    <p><a href="?page_id=9" title="View All" class="button">View Top 10</a></p>
   <?php endif; ?>
   </aside>
 

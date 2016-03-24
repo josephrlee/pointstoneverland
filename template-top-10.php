@@ -34,11 +34,13 @@ Template Name: Top 10
               $what_it_takes = get_sub_field('what_it_takes');
               $value = get_sub_field('value');
               $image = get_sub_field('image');
+              $url = get_sub_field('post_url');
               ?>
               <li>
-                <h4><?php echo $title; ?> <?php if( $image ): ?><img class="size-medium alignright" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" width="400"/><?php endif; ?></h4>
+                <h4><?php echo $title; ?><?php if( $image ): ?><img class="size-medium alignright" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" width="400"/><?php endif; ?></h4>
                 <p><strong>What it takes</strong>: <?php echo $what_it_takes; ?></p>
                 <p><strong>Value</strong>: $<?php echo $value; ?></p>
+                <?php if( $url ): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
               </li>
               <?php endwhile; ?>
             </ol>
