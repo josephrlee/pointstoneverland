@@ -41,7 +41,10 @@
 
     </script>
     <script>
+    window.onload = function () {
       document.getElementById("subscribe-blog-blog_subscription-3").className += " input-group";
+    };
+
     </script>
 	</head>
 
