@@ -5,7 +5,6 @@
   <?php dynamic_sidebar('sidebar'); ?>
   <aside class="top-10">
     <h3>Top 10</h3>
-    <?php $id = 9; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
     <?php if( have_rows('top_10_entry', 9) ): ?>
     <ol class="top-10-list entry-content">
       <?php while( have_rows('top_10_entry', 9) ): the_row();
