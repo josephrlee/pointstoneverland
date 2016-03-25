@@ -43,8 +43,9 @@
 		<!-- end analytics -->
 
     <script>
-      var d = document.getElementById("subscribe-blog-blog_subscription-3");
-      d.className += " input-group";
+      $(document).ready(function(){
+        $("#subscribe-blog-blog_subscription-3").addClass("input-group");
+      });
     </script>
 
 	</head>
