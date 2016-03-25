@@ -544,6 +544,9 @@ SIDEBARS & ASIDES
   border-right: none;
   margin-bottom: 1rem;
   padding-top: .5rem;
+  input[name=jetpack_subscriptions_widget] {
+    @include button
+    }
 }
 /*********************
 FOOTER STYLES
