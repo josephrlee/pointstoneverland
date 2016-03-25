@@ -40,14 +40,9 @@
       ga('send', 'pageview');
 
     </script>
-		<!-- end analytics -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>
-      $(document).ready(function(){
-         $("#subscribe-blog-blog_subscription-3").addClass("input-group");
-      });
+      document.getElementById("subscribe-blog-blog_subscription-3").className += " input-group";
     </script>
-
 	</head>
 
 	<!-- Uncomment this line if using the Off-Canvas Menu -->
