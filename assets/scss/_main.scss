@@ -25,11 +25,11 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
   }
 }
 .off-canvas-wrapper {
-  background: $light-gray;
+  background: $white;
 }
 .row {
   max-width: 100%;
-  @include breakpoint(large up) {
+  @include breakpoint(xlarge up) {
     max-width: 90%;
   }
 }
@@ -124,6 +124,9 @@ NAVIGATION STYLES
         a {
           border: none;
         }
+        .is-dropdown-submenu-item a {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -134,8 +137,10 @@ NAVIGATION STYLES
   }
 }
 .off-canvas {
+  padding: 1rem;
   .menu > li > a {
     padding: .75rem 1rem;
+    font-size: calc(18px);
   }
   .search-form {
     width: 91%;
@@ -224,9 +229,24 @@ POSTS & CONTENT STYLES
 // Entry content
 .entry-content {
   img {
+    width: 100%;
     max-width: 100%;
-    height: auto;
     margin-bottom: 1rem;
+  }
+}
+.home .entry-content {
+  img {
+    height: 50vw;
+    object-fit: cover;
+    object-position: 50% 50%;
+    @include breakpoint(medium only) {
+      height: 50vw;
+      object-position: 50% 100%;
+    }
+    @include breakpoint(large up) {
+      height: 30vw;
+      object-position: 50% 50%;
+    }
   }
   .alignleft,
   img.alignleft {
@@ -599,6 +619,14 @@ FOOTER STYLES
 /*********************
 FOUNDATION STYLES
 *********************/
+a.button {
+  border-bottom: solid 1px scale-color($button-background, $lightness: -15%);
+  text-shadow: 0 -1px 0 scale-color($button-background, $lightness: -5%);
+  font-weight: 600;
+}
+.input-group-field {
+  border-right: none;
+}
 /*********************
 PLUGIN STYLES
 *********************/
@@ -612,9 +640,11 @@ TOP 10
 *********************/
 #sidebar {
   .top-10 {
-    border: solid 1px #ddd;
+    border: solid 1px #eee;
     margin-bottom: 2rem;
     padding: 1rem;
+    border-radius: $global-radius;
+    background: rgba(255, 255, 255, .4);
 		h3 {
 			margin-bottom: 0;
 		}
@@ -626,7 +656,13 @@ TOP 10
     }
     ol {
       list-style-position: inside;
+      margin: 0 0 .25rem;
+    }
+    .info {
       margin: 0;
+      .button {
+        margin: 0;
+      }
     }
   }
 }
