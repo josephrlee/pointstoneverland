@@ -1,4 +1,4 @@
-<div id="sidebar" class="sidebar large-5 medium-6 columns" role="complementary">
+<div id="sidebar" class="sidebar large-5 columns" role="complementary">
 
   <?php if (is_active_sidebar('sidebar')) : ?>
 
@@ -15,7 +15,7 @@
       <li><?php echo $title; ?></li>
     <?php endwhile; ?>
     </ol>
-    <p><a href="?page_id=9" title="View All" class="button">View Top 10</a></p>
+    <p class="info"><a href="?page_id=9" title="View All" class="button">Learn More</a></p>
   <?php endif; ?>
   </aside>
 
