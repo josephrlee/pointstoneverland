@@ -41,10 +41,11 @@
 
     </script>
     <script>
-    window.onload = function () {
-      document.getElementById("subscribe-blog-blog_subscription-3").className += " input-group";
-    };
-
+      window.onload = function () {
+        document.getElementById("subscribe-blog-blog_subscription-3").className += "input-group";
+        document.getElementById("subscribe-email").className += "input-group-field";
+        document.getElementById("subscribe-submit").className += "input-group-button";
+      };
     </script>
 	</head>
 
