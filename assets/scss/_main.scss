@@ -523,8 +523,6 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.sidebar {
-}
 #searchsubmit {}
 .widgettitle {}
 .widget {
@@ -539,6 +537,13 @@ SIDEBARS & ASIDES
       ul {}
     }
   }
+}
+.jetpack_subscription_widget {
+  border: solid 1px $medium-gray;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1rem;
+  padding-top: .5rem;
 }
 /*********************
 FOOTER STYLES

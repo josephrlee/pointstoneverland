@@ -4829,6 +4829,13 @@ SIDEBARS & ASIDES
   .widget ul li {
     list-style: none; }
 
+.jetpack_subscription_widget {
+  border: solid 1px #cacaca;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1rem;
+  padding-top: .5rem; }
+
 /*********************
 FOOTER STYLES
 *********************/
