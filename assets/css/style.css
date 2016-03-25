@@ -4612,10 +4612,6 @@ POSTS & CONTENT STYLES
 .byline {
   color: #999; }
 
-.entry-content img {
-  max-width: 100%;
-  margin-bottom: 1rem; }
-
 .home .entry-content img {
   height: 50vw;
   object-fit: cover;
@@ -4629,31 +4625,35 @@ POSTS & CONTENT STYLES
       height: 30vw;
       object-position: 50% 50%; } }
 
-.home .entry-content .alignleft,
-.home .entry-content img.alignleft {
+.entry-content img {
+  max-width: 100%;
+  margin-bottom: 1rem; }
+
+.entry-content .alignleft,
+.entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left; }
 
-.home .entry-content .alignright,
-.home .entry-content img.alignright {
+.entry-content .alignright,
+.entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right; }
 
-.home .entry-content .aligncenter,
-.home .entry-content img.aligncenter {
+.entry-content .aligncenter,
+.entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
   display: block;
   clear: both; }
 
-.home .entry-content video,
-.home .entry-content object {
+.entry-content video,
+.entry-content object {
   max-width: 100%;
   height: auto; }
 
-.home .entry-content pre {
+.entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
   padding: 10px; }
