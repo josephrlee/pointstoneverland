@@ -42,6 +42,11 @@
     </script>
 		<!-- end analytics -->
 
+    <script>
+      var d = document.getElementById("subscribe-blog-blog_subscription-3");
+      d.className += " input-group";
+    </script>
+
 	</head>
 
 	<!-- Uncomment this line if using the Off-Canvas Menu -->
