@@ -4835,6 +4835,8 @@ SIDEBARS & ASIDES
   border-right: none;
   margin-bottom: 1rem;
   padding-top: .5rem; }
+  .jetpack_subscription_widget .input-group {
+    margin-bottom: 0; }
   .jetpack_subscription_widget input[name=jetpack_subscriptions_widget] {
     display: inline-block;
     text-align: center;
