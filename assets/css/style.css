@@ -4600,8 +4600,6 @@ POSTS & CONTENT STYLES
         width: auto; }
   #content #main {
     padding-top: 2vw; }
-    #content #main p {
-      font-size: 120%; }
   #content #sidebar {
     padding-top: 4vw; }
 
@@ -4625,9 +4623,13 @@ POSTS & CONTENT STYLES
       height: 30vw;
       object-position: 50% 50%; } }
 
+.entry-content p {
+  font-size: 120%; }
+
 .entry-content img {
   max-width: 100%;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-radius: 3px; }
 
 .entry-content .alignleft,
 .entry-content img.alignleft {
@@ -4660,16 +4662,18 @@ POSTS & CONTENT STYLES
 
 .wp-caption {
   max-width: 100%;
-  background: #eee;
-  padding: 5px; }
+  background: #e6e6e6;
+  padding: 3px;
+  margin-bottom: 1rem;
+  border-radius: 3px; }
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
-    width: 100%; }
+    width: 100%;
+    border-radius: 3px; }
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center; }
+    margin: 6px 2px 2px; }
 
 .post-password-form input[type="submit"] {
   display: inline-block;
@@ -4875,9 +4879,9 @@ FOOTER STYLES
       line-height: 1.6; }
       .footer .menu a:first-child {
         padding-left: 0; }
-    .footer .menu a[href*="https://www.facebook.com/pointstoneverland/"] {
+    .footer .menu a[href*="https://www.facebook.com/pointstoneverland"] {
       font-size: 0; }
-      .footer .menu a[href*="https://www.facebook.com/pointstoneverland/"]:before {
+      .footer .menu a[href*="https://www.facebook.com/pointstoneverland"]:before {
         font-family: "foundation-icons";
         font-style: normal;
         font-weight: normal;

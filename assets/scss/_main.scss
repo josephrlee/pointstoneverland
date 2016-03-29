@@ -202,9 +202,6 @@ POSTS & CONTENT STYLES
   }
   #main {
     padding-top: 2vw;
-    p {
-      font-size: 120%;
-    }
   }
   #sidebar {
       padding-top: 4vw;
@@ -243,9 +240,13 @@ POSTS & CONTENT STYLES
   }
 }
 .entry-content {
+  p {
+    font-size: 120%;
+  }
   img {
     max-width: 100%;
     margin-bottom: 1rem;
+    border-radius: $global-radius;
   }
   .alignleft,
   img.alignleft {
@@ -279,18 +280,20 @@ POSTS & CONTENT STYLES
 }
 .wp-caption {
   max-width: 100%;
-  background: #eee;
-  padding: 5px;
+  background: $light-gray;
+  padding: 3px;
+  margin-bottom: 1rem;
+  border-radius: $global-radius;
   // Images inside wp-caption
   img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%;
+    border-radius: $global-radius;
   }
   p.wp-caption-text {
     font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center;
+    margin: 6px 2px 2px;
   }
 }
 // Add Foundation styling to password protect button
@@ -571,7 +574,7 @@ FOOTER STYLES
         padding-left: 0;
       }
     }
-    a[href*="https://www.facebook.com/pointstoneverland/"] {
+    a[href*="https://www.facebook.com/pointstoneverland"] {
     font-size: 0;
       &:before {
         font-family: "foundation-icons";
