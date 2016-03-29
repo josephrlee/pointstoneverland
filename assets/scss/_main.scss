@@ -652,7 +652,7 @@ PLUGIN STYLES
 TOP 10
 *********************/
 #sidebar {
-  .top-10 {
+  .top-10, .featured-card {
     border: solid 1px #eee;
     margin-bottom: 2rem;
     padding: 1rem;
@@ -661,15 +661,16 @@ TOP 10
 		h3 {
 			margin-bottom: 0;
 		}
-    p.intro {
+    p {
       display: block;
-    }
-    p:nth-of-type(2) {
-      display: none;
+      margin: .5rem 0 .25rem;
     }
     ol {
       list-style-position: inside;
       margin: 0 0 .25rem;
+    }
+    img {
+      width: 100%;
     }
     .info {
       margin: 0;

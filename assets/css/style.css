@@ -4946,24 +4946,25 @@ PLUGIN STYLES
 /*********************
 TOP 10
 *********************/
-#sidebar .top-10 {
+#sidebar .top-10, #sidebar .featured-card {
   border: solid 1px #eee;
   margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.4); }
-  #sidebar .top-10 h3 {
+  #sidebar .top-10 h3, #sidebar .featured-card h3 {
     margin-bottom: 0; }
-  #sidebar .top-10 p.intro {
-    display: block; }
-  #sidebar .top-10 p:nth-of-type(2) {
-    display: none; }
-  #sidebar .top-10 ol {
+  #sidebar .top-10 p, #sidebar .featured-card p {
+    display: block;
+    margin: .5rem 0 .25rem; }
+  #sidebar .top-10 ol, #sidebar .featured-card ol {
     list-style-position: inside;
     margin: 0 0 .25rem; }
-  #sidebar .top-10 .info {
+  #sidebar .top-10 img, #sidebar .featured-card img {
+    width: 100%; }
+  #sidebar .top-10 .info, #sidebar .featured-card .info {
     margin: 0; }
-    #sidebar .top-10 .info .button {
+    #sidebar .top-10 .info .button, #sidebar .featured-card .info .button {
       margin: 0; }
 
 /*********************
