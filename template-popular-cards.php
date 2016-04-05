@@ -60,8 +60,8 @@ Template Name: Popular Cards
                       <li><strong>How to Spend Points</strong>: <?php echo $spend_points; ?></li>
                       <li><strong>Our favorite Use</strong>: <?php echo $favorite_use; ?></li>
                     </ul>
-                    <?php if( $url ): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
-                    <?php if( $apply ): ?><p><a href="<?php echo $apply; ?>" title="Read More" class="button">Apply Now</a></p><?php endif; ?>
+                    <?php if( $url ): ?><p class="float-left"><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
+                    <?php if( $apply ): ?><p class="float-right"><a href="<?php echo $apply; ?>" title="Read More" class="button">Apply Now</a></p><?php endif; ?>
                   </td>
                 </tr>
               <?php endwhile; ?>
