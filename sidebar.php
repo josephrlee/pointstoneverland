@@ -42,7 +42,7 @@
   		<input type="submit" class="search-submit button input-group-field" value="<?php echo esc_attr_x('Search', 'jointswp') ?>" />
   	</div>
   </form>
-<?php else : ?>
+  <?php else : ?>
 
   <!-- This content shows up if there are no widgets defined in the backend. -->
 

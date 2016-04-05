@@ -11,8 +11,6 @@
 	</section> <!-- end article section -->
 
 	<footer class="article-footer">
-		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>	</footer> <!-- end article footer -->
-
     <?php if( have_rows('credit_card_entry') ): ?>
       <table class="card hover">
         <tbody>
@@ -29,7 +27,6 @@
           $favorite_use = get_sub_field('our_favorite_use');
           $url = get_sub_field('post_link');
           $apply = get_sub_field('apply');
-
           ?>
 
           <tr>
@@ -54,7 +51,9 @@
         <?php endwhile; ?>
       </tbody>
     </table>
-    <?php endif; ?>                  
+    <?php endif; ?> 
+  </footer> <!-- end article footer -->
+
 	<?php comments_template(); ?>
 
 </article> <!-- end article -->
