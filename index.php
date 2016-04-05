@@ -9,7 +9,7 @@
     </section>
 
     <main id="main" class="large-7 columns" role="main">
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <?php query_posts('posts_per_page=6&offset=1'); if (have_posts()) : while (have_posts()) : the_post(); ?>
       <!-- To see additional archive styles, visit the /parts directory -->
         <?php get_template_part( 'parts/loop', 'archive' ); ?>
 
