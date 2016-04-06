@@ -51,7 +51,7 @@
         <?php endwhile; ?>
       </tbody>
     </table>
-    <?php endif; ?> 
+    <?php endif; ?>
   </footer> <!-- end article footer -->
 
 	<?php comments_template(); ?>

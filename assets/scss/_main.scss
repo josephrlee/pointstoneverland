@@ -528,6 +528,9 @@ RELATED POSTS
 *********************/
 #jp-relatedposts h3.jp-relatedposts-headline {
   font-size: 12pt;
+  &:before {
+    border-top: none;
+  }
 }
 /*********************
 SIDEBARS & ASIDES
