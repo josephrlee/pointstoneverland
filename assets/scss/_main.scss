@@ -556,11 +556,15 @@ SIDEBARS & ASIDES
   }
 }
 .jetpack_subscription_widget {
-  border: solid 1px $medium-gray;
+  border: solid 1px $light-gray;
   border-left: none;
   border-right: none;
   margin-bottom: 1rem;
-  padding-top: .5rem;
+  padding-top: .75rem;
+  .widgettitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
   .input-group {
     margin-bottom: 0;
   }

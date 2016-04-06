@@ -4847,11 +4847,14 @@ SIDEBARS & ASIDES
     list-style: none; }
 
 .jetpack_subscription_widget {
-  border: solid 1px #cacaca;
+  border: solid 1px #e6e6e6;
   border-left: none;
   border-right: none;
   margin-bottom: 1rem;
-  padding-top: .5rem; }
+  padding-top: .75rem; }
+  .jetpack_subscription_widget .widgettitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem; }
   .jetpack_subscription_widget .input-group {
     margin-bottom: 0; }
   .jetpack_subscription_widget input[name=jetpack_subscriptions_widget] {
