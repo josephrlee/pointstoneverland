@@ -4,6 +4,7 @@
   <?php dynamic_sidebar('sidebar'); ?>
   <aside class="top-10 medium-6 large-12 columns">
     <h3>Top 10</h3>
+    <p>Our favorite uses of credit card points at Disney World or Disneyland.</p>
     <?php if( have_rows('top_10_entry', 9) ): ?>
     <ol class="top-10-list entry-content">
       <?php while( have_rows('top_10_entry', 9) ): the_row();
