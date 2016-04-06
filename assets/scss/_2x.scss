@@ -17,7 +17,7 @@ place.
               background-image: url('#{$img-path}/hero-banner-large.jpg');
             }
             @include breakpoint(large up) {
-              background-image: url('#{$img-path}/hero-banner@2x.jpg');
+              background-image:linear-gradient(to bottom, rgba(227, 249, 253, 0) 6%, #e3f9fd 7%, rgba(227, 249, 253, .8) 11%, #e6fafd 32%, #f6fdff 100%), url('#{$img-path}/hero-banner@2x.jpg');
             }
           }
         }

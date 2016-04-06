@@ -11,7 +11,7 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
 @import url("/wp-content/themes/pointstoneverland/assets/fonts/foundation-icons.css");
 
 .off-canvas-content {
-  background-image: url('#{$img-path}/hero-banner-small.jpg');
+  background-image:  linear-gradient(to bottom, rgba(227,249,253,1) 0%, rgba(235,251,254,1) 40%, rgba(246,253,255,1) 100%), url('#{$img-path}/hero-banner-small.jpg');
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -20,7 +20,7 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
     background-image: url('#{$img-path}/hero-banner-medium.jpg');
   }
   @include breakpoint(large up) {
-    background-image: url('#{$img-path}/hero-banner-large.jpg');
+    background-image:  linear-gradient(to bottom, rgba(227,249,253,1) 0%, rgba(235,251,254,1) 40%, rgba(246,253,255,1) 100%), url('#{$img-path}/hero-banner-large.jpg');
   }
 }
 .off-canvas-wrapper {
@@ -111,7 +111,7 @@ NAVIGATION STYLES
         border: solid 1px lighten($primary-color, 10%);
         margin-right: 6px;
         border-radius: $global-radius;
-        background: rgba($body-background, .6);
+        background: rgba($body-background, .4);
         font-weight: bold;
         @include breakpoint(small up){
           padding: .7rem 1rem;
@@ -122,7 +122,7 @@ NAVIGATION STYLES
         top: 3rem;
         margin-left: 0 !important;
         border-radius: $global-radius;
-        background: rgba($body-background, .9);
+        background: rgba($body-background, .8);
         a {
           border: none;
         }
