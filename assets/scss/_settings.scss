@@ -60,7 +60,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #37323E;
 $white: #fefefe;
-$body-background: $white;
+$body-background: #f6fdff;
 $body-font-color: $black;
 $body-font-family: 'Archer SSm A', 'Archer SSm B', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -309,8 +309,8 @@ $dropdown-sizes: (
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-min-width: 223px;
-$dropdownmenu-background: $white;
-$dropdownmenu-border: 1px solid $primary-color;
+$dropdownmenu-background: $body-background;
+$dropdownmenu-border: solid 1px lighten($primary-color, 10%);
 
 // 18. Flex Video
 // --------------

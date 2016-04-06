@@ -8,7 +8,6 @@ GENERAL STYLES
 *********************/
 
 $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path for assets
-
 @import url("/wp-content/themes/pointstoneverland/assets/fonts/foundation-icons.css");
 
 .off-canvas-content {
@@ -16,7 +15,7 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #f6fdff;
+  background-color: $body-background;
   @include breakpoint(medium up) {
     background-image: url('#{$img-path}/hero-banner-medium.jpg');
   }
@@ -109,9 +108,10 @@ NAVIGATION STYLES
         padding-right: 28vw;
       }
       li a {
-        border: solid 1px $primary-color;
-        margin-right: -1px;
-        background: $light-gray;
+        border: solid 1px lighten($primary-color, 10%);
+        margin-right: 6px;
+        border-radius: $global-radius;
+        background: rgba($body-background, .6);
         font-weight: bold;
         @include breakpoint(small up){
           padding: .7rem 1rem;
@@ -119,8 +119,10 @@ NAVIGATION STYLES
       }
       .is-dropdown-submenu {
         left: 0;
-        top: 2.45rem;
+        top: 3rem;
         margin-left: 0 !important;
+        border-radius: $global-radius;
+        background: rgba($body-background, .9);
         a {
           border: none;
         }
@@ -281,7 +283,7 @@ POSTS & CONTENT STYLES
 .wp-caption {
   max-width: 100%;
   background: $light-gray;
-  padding: 3px;
+  padding: 0;
   margin-bottom: 1rem;
   border-radius: $global-radius;
   // Images inside wp-caption
@@ -289,11 +291,14 @@ POSTS & CONTENT STYLES
     max-width: 100%;
     margin-bottom: 0;
     width: 100%;
-    border-radius: $global-radius;
+    border-top-left-radius: $global-radius;
+    border-top-right-radius: $global-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   p.wp-caption-text {
     font-size: 0.85em;
-    margin: 6px 2px 2px;
+    padding: .75rem 1rem;
   }
 }
 // Add Foundation styling to password protect button
@@ -529,8 +534,8 @@ RELATED POSTS
 #jp-relatedposts h3.jp-relatedposts-headline {
   font-size: 12pt !important;
 }
-#jp-relatedposts h3.jp-relatedposts-headline:before {
-  border-top: none;
+#jp-relatedposts h3.jp-relatedposts-headline em:before {
+  border-top: none !important;
 }
 /*********************
 SIDEBARS & ASIDES

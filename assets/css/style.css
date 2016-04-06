@@ -975,7 +975,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #37323E;
-  background: #fefefe;
+  background: #f6fdff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2426,7 +2426,7 @@ legend {
   padding: 1.25rem;
   margin: 1.125rem 0; }
   .fieldset legend {
-    background: #fefefe;
+    background: #f6fdff;
     padding: 0 0.1875rem;
     margin: 0;
     margin-left: -0.1875rem; }
@@ -2854,7 +2854,7 @@ select {
     font-size: 0.9rem;
     float: left; }
     .button-group .button:not(:last-child) {
-      border-right: 1px solid #fefefe; }
+      border-right: 1px solid #f6fdff; }
   .button-group.tiny .button {
     font-size: 0.6rem; }
   .button-group.small .button {
@@ -3038,7 +3038,7 @@ select {
   margin-right: 0.75rem; }
 
 .dropdown-pane {
-  background-color: #fefefe;
+  background-color: #f6fdff;
   border: 1px solid #cacaca;
   border-radius: 3px;
   display: block;
@@ -3317,8 +3317,8 @@ select {
   left: 100%;
   min-width: 223px;
   z-index: 1;
-  background: #fefefe;
-  border: 1px solid #9ECCD4; }
+  background: #f6fdff;
+  border: solid 1px #c1dfe4; }
   .is-dropdown-submenu .is-dropdown-submenu-parent > a::after {
     right: 14px;
     margin-top: -3px; }
@@ -3340,8 +3340,6 @@ select {
     border-color: transparent transparent transparent #9ECCD4;
     border-left-style: solid;
     border-right-width: 0; }
-  .is-dropdown-submenu .is-dropdown-submenu {
-    margin-top: -1px; }
   .is-dropdown-submenu > li {
     width: 100%; }
   .is-dropdown-submenu:not(.js-dropdown-nohover) > .is-dropdown-submenu-parent:hover > .is-dropdown-submenu, .is-dropdown-submenu.js-dropdown-active {
@@ -3587,7 +3585,7 @@ body {
 .off-canvas-content,
 .off-canvas-content {
   min-height: 100%;
-  background: #fefefe;
+  background: #f6fdff;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   -webkit-backface-visibility: hidden;
@@ -4537,15 +4535,18 @@ NAVIGATION STYLES
         .top-bar .top-bar-right .primary-menu {
           padding-right: 28vw; } }
       .top-bar .top-bar-right .primary-menu li a {
-        border: solid 1px #9ECCD4;
-        margin-right: -1px;
-        background: #e6e6e6;
+        border: solid 1px #c1dfe4;
+        margin-right: 6px;
+        border-radius: 3px;
+        background: rgba(246, 253, 255, 0.6);
         font-weight: bold;
         padding: .7rem 1rem; }
       .top-bar .top-bar-right .primary-menu .is-dropdown-submenu {
         left: 0;
-        top: 2.45rem;
-        margin-left: 0 !important; }
+        top: 3rem;
+        margin-left: 0 !important;
+        border-radius: 3px;
+        background: rgba(246, 253, 255, 0.9); }
         .top-bar .top-bar-right .primary-menu .is-dropdown-submenu a {
           border: none; }
         .top-bar .top-bar-right .primary-menu .is-dropdown-submenu .is-dropdown-submenu-item a {
@@ -4663,17 +4664,20 @@ POSTS & CONTENT STYLES
 .wp-caption {
   max-width: 100%;
   background: #e6e6e6;
-  padding: 3px;
+  padding: 0;
   margin-bottom: 1rem;
   border-radius: 3px; }
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%;
-    border-radius: 3px; }
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
-    margin: 6px 2px 2px; }
+    padding: .75rem 1rem; }
 
 .post-password-form input[type="submit"] {
   display: inline-block;
@@ -4831,8 +4835,8 @@ RELATED POSTS
 #jp-relatedposts h3.jp-relatedposts-headline {
   font-size: 12pt !important; }
 
-#jp-relatedposts h3.jp-relatedposts-headline:before {
-  border-top: none; }
+#jp-relatedposts h3.jp-relatedposts-headline em:before {
+  border-top: none !important; }
 
 /*********************
 SIDEBARS & ASIDES
