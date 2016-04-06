@@ -4,7 +4,7 @@
 
   <div id="inner-content" class="row">
 
-    <section id="posts-slider" class="large-12 columns hide-for-small-only">
+    <section id="posts-slider" class="large-12 columns">
       <?php get_template_part( 'parts/loop', 'slider' ); ?>
     </section>
 
