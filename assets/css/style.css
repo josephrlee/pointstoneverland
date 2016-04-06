@@ -2015,13 +2015,13 @@ h4,
 h5,
 h6 {
   font-family: "Archer SSm A", "Archer SSm B", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
   margin-top: 0;
-  margin-bottom: 0.5rem;
-  line-height: 1.4; }
+  margin-bottom: 1rem;
+  line-height: 1.2; }
   h1 small,
   h2 small,
   h3 small,
@@ -4826,6 +4826,12 @@ COMMENT FORM STYLES
   margin: 0 20px 1.1em; }
 
 /*********************
+RELATED POSTS
+*********************/
+#jp-relatedposts h3.jp-relatedposts-headline {
+  font-size: 12pt; }
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 .widget ul {
@@ -4879,9 +4885,9 @@ FOOTER STYLES
       line-height: 1.6; }
       .footer .menu a:first-child {
         padding-left: 0; }
-    .footer .menu a[href*="https://www.facebook.com/pointstoneverland"] {
+    .footer .menu a[href*="facebook.com/pointstoneverland"] {
       font-size: 0; }
-      .footer .menu a[href*="https://www.facebook.com/pointstoneverland"]:before {
+      .footer .menu a[href*="facebook.com/pointstoneverland"]:before {
         font-family: "foundation-icons";
         font-style: normal;
         font-weight: normal;
@@ -4893,9 +4899,9 @@ FOOTER STYLES
         text-decoration: inherit;
         content: "\f1c4";
         font-size: 20px; }
-    .footer .menu a[href*="https://twitter.com/pointsneverland/"] {
+    .footer .menu a[href*="twitter.com/pointsneverland/"] {
       font-size: 0; }
-      .footer .menu a[href*="https://twitter.com/pointsneverland/"]:before {
+      .footer .menu a[href*="twitter.com/pointsneverland/"]:before {
         font-family: "foundation-icons";
         font-style: normal;
         font-weight: normal;
@@ -4966,6 +4972,11 @@ TOP 10
     margin: 0; }
     #sidebar .top-10 .info .button, #sidebar .featured-card .info .button {
       margin: 0; }
+
+@media screen and (min-width: 47.5em) and (max-width: 59.9375em) {
+  #sidebar .featured-card {
+    width: 46%;
+    float: right; } }
 
 /*********************
 CREIDT CARD STYLES

@@ -524,6 +524,12 @@ COMMENT FORM STYLES
   margin: 0 20px 1.1em;
 }
 /*********************
+RELATED POSTS
+*********************/
+#jp-relatedposts h3.jp-relatedposts-headline {
+  font-size: 12pt;
+}
+/*********************
 SIDEBARS & ASIDES
 *********************/
 #searchsubmit {}
@@ -574,7 +580,7 @@ FOOTER STYLES
         padding-left: 0;
       }
     }
-    a[href*="https://www.facebook.com/pointstoneverland"] {
+    a[href*="facebook.com/pointstoneverland"] {
     font-size: 0;
       &:before {
         font-family: "foundation-icons";
@@ -590,7 +596,7 @@ FOOTER STYLES
         font-size: 20px;
       }
     }
-    a[href*="https://twitter.com/pointsneverland/"] {
+    a[href*="twitter.com/pointsneverland/"] {
     font-size: 0;
       &:before {
         font-family: "foundation-icons";
@@ -677,6 +683,12 @@ TOP 10
       .button {
         margin: 0;
       }
+    }
+  }
+  @include breakpoint(medium only) {
+    .featured-card {
+      width: 46%;
+      float: right;
     }
   }
 }

@@ -1,9 +1,8 @@
 <div id="sidebar" class="sidebar large-5 columns" role="complementary">
-
   <?php if (is_active_sidebar('sidebar')) : ?>
 
   <?php dynamic_sidebar('sidebar'); ?>
-  <aside class="top-10">
+  <aside class="top-10 medium-6 large-12 columns">
     <h3>Top 10</h3>
     <?php if( have_rows('top_10_entry', 9) ): ?>
     <ol class="top-10-list entry-content">
@@ -20,7 +19,7 @@
   </aside>
 
   <?php if( have_rows('credit_card_entry', 11) ): ?>
-  <aside class="featured-card">
+  <aside class="featured-card medium-6 large-12 columns">
       <?php while( have_rows('credit_card_entry', 11) ): the_row();
       // vars
       $featured_card = get_sub_field('featured_card');
@@ -51,5 +50,4 @@
   </div>
 
 <?php endif; ?>
-
 </div>
