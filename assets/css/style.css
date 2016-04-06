@@ -4829,9 +4829,10 @@ COMMENT FORM STYLES
 RELATED POSTS
 *********************/
 #jp-relatedposts h3.jp-relatedposts-headline {
-  font-size: 12pt; }
-  #jp-relatedposts h3.jp-relatedposts-headline:before {
-    border-top: none; }
+  font-size: 12pt !important; }
+
+#jp-relatedposts h3.jp-relatedposts-headline:before {
+  border-top: none; }
 
 /*********************
 SIDEBARS & ASIDES
