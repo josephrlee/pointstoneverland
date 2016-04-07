@@ -72,3 +72,18 @@ function first_paragraph_excerpt( $id=null ) {
     $excerpt = strip_tags( $excerpt );
     return $excerpt;
 }
+
+// Hide pingbacks in comment count
+
+add_filter('get_comments_number', 'comment_count', 0);
+function comment_count( $count ) {
+	global $id;
+	$comments = get_approved_comments($id);
+	$comment_count = 0;
+	foreach($comments as $comment){
+		if($comment->comment_type == ""){
+			$comment_count++;
+		}
+	}
+	return $comment_count;
+}
