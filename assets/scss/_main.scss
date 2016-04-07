@@ -11,7 +11,7 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
 @import url("/wp-content/themes/pointstoneverland/assets/fonts/foundation-icons.css");
 
 .off-canvas-content {
-  background-image:  linear-gradient(to bottom, rgba(227,249,253,1) 0%, rgba(235,251,254,1) 40%, rgba(246,253,255,1) 100%), url('#{$img-path}/hero-banner-small.jpg');
+  background-image: url('#{$img-path}/hero-banner-small.jpg');
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -20,7 +20,7 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
     background-image: url('#{$img-path}/hero-banner-medium.jpg');
   }
   @include breakpoint(large up) {
-    background-image:  linear-gradient(to bottom, rgba(227,249,253,1) 0%, rgba(235,251,254,1) 40%, rgba(246,253,255,1) 100%), url('#{$img-path}/hero-banner-large.jpg');
+    background-image: url('#{$img-path}/hero-banner-large.jpg');
   }
 }
 .off-canvas-wrapper {
@@ -342,6 +342,11 @@ COMMENT STYLES
   .commentlist {
     margin-left: 0;
   }
+}
+#disqus_thread {
+  @include callout-base;
+  background-color: lighten($body-background, 1%);
+  border: solid 1px lighten($primary-color, 10%);
 }
 #respond {
   ul {
@@ -671,11 +676,11 @@ TOP 10
 *********************/
 #sidebar {
   .top-10, .featured-card {
-    border: solid 1px #eee;
+    border: solid 1px darken($body-background, 1%);
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: $global-radius;
-    background: rgba(255, 255, 255, .4);
+    background: lighten($body-background, 2%);
 		h3 {
 			margin-bottom: 0;
 		}

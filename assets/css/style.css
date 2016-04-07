@@ -2943,7 +2943,7 @@ select {
   border-radius: 3px;
   position: relative;
   color: #37323E;
-  background-color: white; }
+  background-color: #f0fcfe; }
   .callout > :first-child {
     margin-top: 0; }
   .callout > :last-child {
@@ -4455,7 +4455,7 @@ Stylesheet: Main Stylesheet
 GENERAL STYLES
 *********************/
 .off-canvas-content {
-  background-image: linear-gradient(to bottom, #e3f9fd 0%, #ebfbfe 40%, #f6fdff 100%), url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-small.jpg");
+  background-image: url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-small.jpg");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -4465,7 +4465,7 @@ GENERAL STYLES
       background-image: url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-medium.jpg"); } }
   @media screen and (min-width: 60em) {
     .off-canvas-content {
-      background-image: linear-gradient(to bottom, #e3f9fd 0%, #ebfbfe 40%, #f6fdff 100%), url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-large.jpg"); } }
+      background-image: url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-large.jpg"); } }
 
 .off-canvas-wrapper {
   background: #fefefe; }
@@ -4719,6 +4719,20 @@ COMMENT STYLES
 #comments .commentlist {
   margin-left: 0; }
 
+#disqus_thread {
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(55, 50, 62, 0.25);
+  border-radius: 3px;
+  position: relative;
+  color: #37323E;
+  background-color: #e9fafe;
+  border: solid 1px #c1dfe4; }
+  #disqus_thread > :first-child {
+    margin-top: 0; }
+  #disqus_thread > :last-child {
+    margin-bottom: 0; }
+
 #respond ul {
   margin-left: 0; }
 
@@ -4963,11 +4977,11 @@ PLUGIN STYLES
 TOP 10
 *********************/
 #sidebar .top-10, #sidebar .featured-card {
-  border: solid 1px #eee;
+  border: solid 1px #dff8fe;
   margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.4); }
+  background: #eefbfe; }
   #sidebar .top-10 h3, #sidebar .featured-card h3 {
     margin-bottom: 0; }
   #sidebar .top-10 p, #sidebar .featured-card p {
@@ -5020,7 +5034,7 @@ place.
       background-image: url("/wp-content/themes/pointstoneverland/assets/images/hero-banner-large.jpg"); } }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3) and (min-width: 60em), only screen and (-webkit-min-device-pixel-ratio: 1.25) and (min-width: 60em), only screen and (min-resolution: 120dpi) and (min-width: 60em) {
     .off-canvas-content {
-      background-image: linear-gradient(to bottom, rgba(227, 249, 253, 0) 6%, #e3f9fd 7%, rgba(227, 249, 253, 0.8) 11%, #e6fafd 32%, #f6fdff 100%), url("/wp-content/themes/pointstoneverland/assets/images/hero-banner@2x.jpg"); } }
+      background-image: url("/wp-content/themes/pointstoneverland/assets/images/hero-banner@2x.jpg"); } }
 
 /******************************************************************
 
