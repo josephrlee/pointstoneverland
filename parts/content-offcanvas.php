@@ -6,4 +6,11 @@
 		</div>
 	</form>
 	<?php joints_off_canvas_nav(); ?>
+
+  <?php if (is_active_sidebar('Offcanvas')) : ?>
+
+  <?php dynamic_sidebar('Offcanvas'); ?>
+
+  <?php endif; ?>
+
 </aside>
