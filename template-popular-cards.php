@@ -27,28 +27,35 @@ Template Name: Popular Cards
 
 
           <?php if( have_rows('credit_card_entry') ): ?>
-            <table class="card hover">
-              <tbody>
-                <?php while( have_rows('credit_card_entry') ): the_row();
-                // vars
-                $card_name = get_sub_field('card_name');
-                $image = get_sub_field('card_image');
-                $kind = get_sub_field('what_kind_of_points');
-                $bonus = get_sub_field('sign_up_bonus');
-                $fee = get_sub_field('annual_fee');
-                $earn_points = get_sub_field('how_to_earn_points');
-                $point_value = get_sub_field('point_value');
-                $spend_points = get_sub_field('how_to_spend_points');
-                $favorite_use = get_sub_field('our_favorite_use');
-                $url = get_sub_field('post_link');
-                $apply = get_sub_field('apply');
+            <?php while( have_rows('credit_card_entry') ): the_row();
+            // vars
+            $card_name = get_sub_field('card_name');
+            $image = get_sub_field('card_image');
+            $kind = get_sub_field('what_kind_of_points');
+            $bonus = get_sub_field('sign_up_bonus');
+            $fee = get_sub_field('annual_fee');
+            $earn_points = get_sub_field('how_to_earn_points');
+            $point_value = get_sub_field('point_value');
+            $spend_points = get_sub_field('how_to_spend_points');
+            $favorite_use = get_sub_field('our_favorite_use');
+            $url = get_sub_field('post_link');
+            $apply = get_sub_field('apply');
 
-                ?>
-
+            ?>
+            <table class="card stack">
+              <thead>
                 <tr>
-                  <td class="card-name">
-                    <h4><strong><?php echo $card_name; ?></strong></h4>
+                  <th colspan="2" class="card-name">
+                    <h3><?php echo $card_name; ?></h3>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="card-image">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                    <?php if( $apply ): ?><p><a href="<?php echo $apply; ?>" title="Read More" class="button ">Apply Now</a></p><?php endif; ?>
+                      <?php if( $url ): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Learn More</a></p><?php endif; ?>
                   </td>
                   <td class="card-details">
                     <ul>
@@ -60,23 +67,12 @@ Template Name: Popular Cards
                       <li><strong>How to Spend Points</strong>: <?php echo $spend_points; ?></li>
                       <li><strong>Our favorite Use</strong>: <?php echo $favorite_use; ?></li>
                     </ul>
-                    <?php if( $url ): ?><p class="float-left"><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
-                    <?php if( $apply ): ?><p class="float-right"><a href="<?php echo $apply; ?>" title="Read More" class="button">Apply Now</a></p><?php endif; ?>
                   </td>
                 </tr>
-              <?php endwhile; ?>
-            </tbody>
-          </table>
-
-
+              </tbody>
+            </table>
+          <?php endwhile; ?>
         <?php endif; ?>
-
-
-        <footer class="article-footer">
-
-        </footer> <!-- end article footer -->
-
-        <?php comments_template(); ?>
 
       </article> <!-- end article -->
 

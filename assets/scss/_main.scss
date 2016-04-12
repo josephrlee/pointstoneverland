@@ -712,16 +712,42 @@ TOP 10
 /*********************
 CREIDT CARD STYLES
 *********************/
-.card-name, .card-details {
+.card-name, .card-image, .card-details {
   padding: 1rem;
+  vertical-align: top;
 }
 .card-name {
-  vertical-align: top;
-  @include breakpoint(medium up) {
-    width: 32%;
+  margin-top: 1rem;
+  h3 {
+    text-align: left;
+    margin: 0;
+  }
+}
+.card-image {
+  @include breakpoint(large up) {
+    width: 26%;
   }
   img {
     width: 100%;
-    max-width: 240px;
+    margin-bottom: 1rem;
+  }
+  .button {
+    width:  100%;
+    margin-bottom: .25rem;
+  }
+}
+.card-details {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    li {
+      padding: .5rem 1rem;
+      &:nth-of-type(even) {
+        background: rgba($light-gray, .1);
+      }
+      &:nth-of-type(odd) {
+        background: rgba($light-gray, .4);
+      }
+    }
   }
 }
