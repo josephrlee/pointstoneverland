@@ -4158,7 +4158,9 @@ table {
     padding: 0.5rem 0.625rem 0.625rem; }
 
 @media screen and (max-width: 59.9375em) {
-  table.stack thead {
+  table.stack thead th:first-child {
+    display: block; }
+  table.stack thead th {
     display: none; }
   table.stack tfoot {
     display: none; }
@@ -5022,6 +5024,9 @@ CREIDT CARD STYLES
 .card-image img {
   width: 100%;
   margin-bottom: 1rem; }
+  @media screen and (min-width: 47.5em) {
+    .card-image img {
+      max-width: 400px; } }
 
 .card-image .button {
   width: 100%;
@@ -5036,6 +5041,15 @@ CREIDT CARD STYLES
       background: rgba(230, 230, 230, 0.1); }
     .card-details ul li:nth-of-type(odd) {
       background: rgba(230, 230, 230, 0.4); }
+
+/*********************
+Hotel Maps
+*********************/
+.page-id-24 .flex-video {
+  padding-bottom: 50%;
+  margin-bottom: 2rem; }
+  .page-id-24 .flex-video iframe {
+    border: solid 1px #e6e6e6; }
 
 /******************************************************************
 

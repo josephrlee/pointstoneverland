@@ -730,6 +730,9 @@ CREIDT CARD STYLES
   img {
     width: 100%;
     margin-bottom: 1rem;
+    @include breakpoint(medium up) {
+      max-width: 400px;
+    }
   }
   .button {
     width:  100%;
@@ -748,6 +751,18 @@ CREIDT CARD STYLES
       &:nth-of-type(odd) {
         background: rgba($light-gray, .4);
       }
+    }
+  }
+}
+/*********************
+Hotel Maps
+*********************/
+.page-id-24 {
+  .flex-video {
+    padding-bottom: 50%;
+    margin-bottom: 2rem;
+    iframe {
+      border: solid 1px $light-gray;
     }
   }
 }
