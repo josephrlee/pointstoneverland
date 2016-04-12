@@ -3616,19 +3616,19 @@ body {
   [data-whatinput='mouse'] .off-canvas {
     outline: 0; }
   .off-canvas.position-left {
-    left: -400px;
+    left: -300px;
     top: 0;
-    width: 400px; }
+    width: 300px; }
     .is-open-left {
-      -webkit-transform: translateX(400px);
-      transform: translateX(400px); }
+      -webkit-transform: translateX(300px);
+      transform: translateX(300px); }
   .off-canvas.position-right {
-    right: -400px;
+    right: -300px;
     top: 0;
-    width: 400px; }
+    width: 300px; }
     .is-open-right {
-      -webkit-transform: translateX(-400px);
-      transform: translateX(-400px); }
+      -webkit-transform: translateX(-300px);
+      transform: translateX(-300px); }
 
 @media screen and (min-width: 47.5em) {
   .position-left.reveal-for-medium {
@@ -3636,13 +3636,13 @@ body {
     z-index: auto;
     position: fixed; }
     .position-left.reveal-for-medium ~ .off-canvas-content {
-      margin-left: 400px; }
+      margin-left: 300px; }
   .position-right.reveal-for-medium {
     right: 0;
     z-index: auto;
     position: fixed; }
     .position-right.reveal-for-medium ~ .off-canvas-content {
-      margin-right: 400px; } }
+      margin-right: 300px; } }
 
 @media screen and (min-width: 60em) {
   .position-left.reveal-for-large {
@@ -3650,13 +3650,13 @@ body {
     z-index: auto;
     position: fixed; }
     .position-left.reveal-for-large ~ .off-canvas-content {
-      margin-left: 400px; }
+      margin-left: 300px; }
   .position-right.reveal-for-large {
     right: 0;
     z-index: auto;
     position: fixed; }
     .position-right.reveal-for-large ~ .off-canvas-content {
-      margin-right: 400px; } }
+      margin-right: 300px; } }
 
 @media screen and (min-width: 75em) {
   .position-left.reveal-for-xlarge {
@@ -3664,13 +3664,13 @@ body {
     z-index: auto;
     position: fixed; }
     .position-left.reveal-for-xlarge ~ .off-canvas-content {
-      margin-left: 400px; }
+      margin-left: 300px; }
   .position-right.reveal-for-xlarge {
     right: 0;
     z-index: auto;
     position: fixed; }
     .position-right.reveal-for-xlarge ~ .off-canvas-content {
-      margin-right: 400px; } }
+      margin-right: 300px; } }
 
 .orbit {
   position: relative; }
