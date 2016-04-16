@@ -4474,6 +4474,10 @@ GENERAL STYLES
 
 .row {
   max-width: 100%; }
+  .row .row {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
   @media screen and (min-width: 75em) {
     .row {
       max-width: 90%; } }
@@ -5041,6 +5045,48 @@ CREIDT CARD STYLES
       background: rgba(230, 230, 230, 0.1); }
     .card-details ul li:nth-of-type(odd) {
       background: rgba(230, 230, 230, 0.4); }
+
+/*********************
+Top 10 List
+*********************/
+.callout {
+  padding: 0; }
+  .callout .top-10-list {
+    overflow: hidden;
+    padding-top: 0; }
+    .callout .top-10-list figure {
+      padding: 0;
+      margin: 0; }
+      @media screen and (max-width: 47.4375em) {
+        .callout .top-10-list figure {
+          padding: 0;
+          margin: 0 -1em 2em;
+          width: 110%; } }
+      @media screen and (min-width: 47.5em) {
+        .callout .top-10-list figure {
+          margin: 0; } }
+      .callout .top-10-list figure img {
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%; }
+        @media screen and (min-width: 47.5em) {
+          .callout .top-10-list figure img {
+            max-height: 450px;
+            height: 420px; } }
+        @media screen and (min-width: 60em) {
+          .callout .top-10-list figure img {
+            height: 320px;
+            max-height: 350px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px; } }
+    .callout .top-10-list main p {
+      font-size: 120%; }
+    @media screen and (min-width: 47.5em) {
+      .callout .top-10-list main {
+        padding-top: 2em; } }
+    .callout .top-10-list main p:last-child {
+      margin: 0; }
 
 /*********************
 Hotel Maps

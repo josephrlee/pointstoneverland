@@ -28,6 +28,11 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
 }
 .row {
   max-width: 100%;
+  .row {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
   @include breakpoint(xlarge up) {
     max-width: 90%;
   }
@@ -750,6 +755,55 @@ CREIDT CARD STYLES
       }
       &:nth-of-type(odd) {
         background: rgba($light-gray, .4);
+      }
+    }
+  }
+}
+/*********************
+Top 10 List
+*********************/
+.callout {
+  padding: 0;
+  .top-10-list {
+    overflow: hidden;
+    padding-top: 0;
+    figure {
+      padding: 0;
+      margin: 0;
+      @include breakpoint(small only) {
+        padding: 0;
+        margin: 0 -1em 2em;
+        width: 110%;
+      }
+      @include breakpoint(medium up) {
+        margin: 0;
+      }
+      img {
+        max-height: 300px;
+        @include breakpoint(medium up) {
+          max-height: 450px;
+          height: 420px;
+        }
+        @include breakpoint(large up) {
+          height: 320px;
+          max-height: 350px;
+          border-top-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+        }
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+    }
+    main {
+      p{
+        font-size: 120%;
+      }
+      @include breakpoint(medium up) {
+        padding-top: 2em;
+      }
+      p:last-child {
+        margin: 0;
       }
     }
   }
