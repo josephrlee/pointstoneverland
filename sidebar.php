@@ -10,9 +10,14 @@
       <?php while( have_rows('top_10_entry', 9) ): the_row();
       // vars
       $title = get_sub_field('title');
-      $url = get_sub_field('post_url');
+      $url = get_sub_field('post_url'); 
       ?>
-      <li><?php echo $title; ?></li>
+
+      <?php if( !empty( $url ) ): ?>
+          <li><a href="<?php echo $url?>"><?php echo $title; ?></a></li>
+      <?php else: ?>
+        <li><?php echo $title; ?></li>
+      <?php endif; ?>
     <?php endwhile; ?>
     </ol>
     <p class="info"><a href="?page_id=9" title="View All" class="button">Learn More</a></p>
