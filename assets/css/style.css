@@ -4569,6 +4569,15 @@ NAVIGATION STYLES
   .off-canvas .search-form {
     width: 91%;
     margin: 1rem; }
+  .off-canvas .widget {
+    padding: 1rem; }
+    .off-canvas .widget ul {
+      border-top: solid 1px rgba(230, 230, 230, 0.6);
+      padding-top: .5rem; }
+      .off-canvas .widget ul .cat-item {
+        border-bottom: solid 1px rgba(230, 230, 230, 0.6);
+        padding-bottom: .5rem;
+        margin-bottom: .5rem; }
 
 .off-canvas-list ul {
   margin-left: 0; }
@@ -4608,7 +4617,11 @@ POSTS & CONTENT STYLES
   #content #main {
     padding-top: 2vw; }
   #content #sidebar {
-    padding-top: 4vw; }
+    padding-top: 2vw; }
+    #content #sidebar .fb-page,
+    #content #sidebar .fb-page span,
+    #content #sidebar .fb-page span iframe[style] {
+      width: 100% !important; }
 
 .page-title .vcard {
   border: 0;
@@ -5011,6 +5024,9 @@ TOP 10
 /*********************
 CREIDT CARD STYLES
 *********************/
+.card {
+  margin-bottom: 2rem; }
+
 .card-name, .card-image, .card-details {
   padding: 1rem;
   vertical-align: top; }
@@ -5050,7 +5066,8 @@ CREIDT CARD STYLES
 Top 10 List
 *********************/
 .callout {
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 2rem; }
   .callout .top-10-list {
     overflow: hidden;
     padding-top: 0; }

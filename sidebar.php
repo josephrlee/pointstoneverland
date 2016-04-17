@@ -2,6 +2,9 @@
   <?php if (is_active_sidebar('sidebar')) : ?>
 
   <?php dynamic_sidebar('sidebar'); ?>
+
+  <div class="fb-page" data-href="https://www.facebook.com/pointstoneverland/" data-small-header="true" data-adapt-container-width="true" data-width="500" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pointstoneverland/"><a href="https://www.facebook.com/pointstoneverland/">Points to Neverland</a></blockquote></div></div>
+
   <aside class="top-10 medium-6 large-12 columns">
     <h3>Top 10</h3>
     <p>Our favorite uses of credit card points at Disney World or Disneyland.</p>
@@ -10,7 +13,7 @@
       <?php while( have_rows('top_10_entry', 9) ): the_row();
       // vars
       $title = get_sub_field('title');
-      $url = get_sub_field('post_url'); 
+      $url = get_sub_field('post_url');
       ?>
 
       <?php if( !empty( $url ) ): ?>

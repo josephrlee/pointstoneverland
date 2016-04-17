@@ -153,6 +153,18 @@ NAVIGATION STYLES
     width: 91%;
     margin: 1rem;
   }
+  .widget {
+    padding: 1rem;
+    ul {
+      border-top: solid 1px rgba($light-gray,.6);
+      padding-top: .5rem;
+      .cat-item {
+        border-bottom: solid 1px rgba($light-gray,.6);
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+      }
+    }
+  }
 }
 .off-canvas-list {
   ul {
@@ -211,7 +223,12 @@ POSTS & CONTENT STYLES
     padding-top: 2vw;
   }
   #sidebar {
-      padding-top: 4vw;
+    padding-top: 2vw;
+    .fb-page,
+    .fb-page span, 
+    .fb-page span iframe[style] {
+        width: 100% !important;
+    }
   }
 }
 .single-title,
@@ -717,6 +734,9 @@ TOP 10
 /*********************
 CREIDT CARD STYLES
 *********************/
+.card {
+  margin-bottom: 2rem;
+}
 .card-name, .card-image, .card-details {
   padding: 1rem;
   vertical-align: top;
@@ -764,6 +784,7 @@ Top 10 List
 *********************/
 .callout {
   padding: 0;
+  margin-bottom: 2rem;
   .top-10-list {
     overflow: hidden;
     padding-top: 0;
