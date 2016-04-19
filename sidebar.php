@@ -1,4 +1,4 @@
-<div id="sidebar" class="sidebar large-5 columns" role="complementary">
+<div id="sidebar" class="sidebar large-4 columns" role="complementary">
   <?php if (is_active_sidebar('sidebar')) : ?>
 
   <?php dynamic_sidebar('sidebar'); ?>
@@ -40,7 +40,9 @@
     <?php endwhile; ?>
   </aside>
   <?php endif; ?>
-  <div class="fb-page" data-href="https://www.facebook.com/pointstoneverland/" data-small-header="false" data-adapt-container-width="true" data-width="500" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pointstoneverland/"><a href="https://www.facebook.com/pointstoneverland/">Points to Neverland</a></blockquote></div></div>
+  <aside class="fb-page medium-6 large-12 columns" data-href="https://www.facebook.com/pointstoneverland/" data-small-header="false" data-adapt-container-width="true" data-width="500" data-hide-cover="false" data-show-facepile="true">
+    <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pointstoneverland/"><a href="https://www.facebook.com/pointstoneverland/">Points to Neverland</a></blockquote></div>
+  </aside>
   <?php else : ?>
 
   <!-- This content shows up if there are no widgets defined in the backend. -->

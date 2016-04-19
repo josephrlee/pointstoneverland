@@ -4604,18 +4604,19 @@ POSTS & CONTENT STYLES
     padding: 2rem 0; }
   #content #posts-slider {
     margin-bottom: 2rem; }
-    #content #posts-slider .orbit-container {
-      background: grey; }
-      #content #posts-slider .orbit-container .orbit-slide {
-        height: 75vh; }
-        #content #posts-slider .orbit-container .orbit-slide a {
-          -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d; }
-          #content #posts-slider .orbit-container .orbit-slide a img {
-            object-fit: cover;
-            height: 75vh; }
-        #content #posts-slider .orbit-container .orbit-slide .orbit-caption {
-          width: auto; }
+    #content #posts-slider .orbit-container .orbit-slide {
+      height: 75vh; }
+      #content #posts-slider .orbit-container .orbit-slide a {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d; }
+        #content #posts-slider .orbit-container .orbit-slide a img {
+          object-fit: cover;
+          height: 75vh;
+          border-radius: 3px; }
+      #content #posts-slider .orbit-container .orbit-slide .orbit-caption {
+        width: auto;
+        border-bottom-right-radius: 3px;
+        border-top-left-radius: 3px; }
   #content #main {
     padding-top: 2vw; }
   #content #sidebar {
@@ -4623,8 +4624,26 @@ POSTS & CONTENT STYLES
     #content #sidebar .fb-page,
     #content #sidebar .fb-page span,
     #content #sidebar .fb-page span iframe[style] {
-      width: 100% !important;
-      border-radius: 3px; }
+      border-radius: 3px;
+      display: block;
+      float: left; }
+      @media screen and (max-width: 47.4375em) {
+        #content #sidebar .fb-page,
+        #content #sidebar .fb-page span,
+        #content #sidebar .fb-page span iframe[style] {
+          padding: 0;
+          width: 100%; } }
+      @media screen and (min-width: 47.5em) {
+        #content #sidebar .fb-page,
+        #content #sidebar .fb-page span,
+        #content #sidebar .fb-page span iframe[style] {
+          width: 46%; } }
+      @media screen and (min-width: 60em) {
+        #content #sidebar .fb-page,
+        #content #sidebar .fb-page span,
+        #content #sidebar .fb-page span iframe[style] {
+          padding: 0;
+          width: 100% !important; } }
 
 .page-title .vcard {
   border: 0;
@@ -5014,12 +5033,10 @@ TOP 10
     list-style-position: inside;
     margin: 0 0 .25rem;
     font-weight: bolder; }
-  #sidebar .top-10 img, #sidebar .featured-card img {
-    width: 100%; }
-  #sidebar .top-10 .info, #sidebar .featured-card .info {
-    margin: 0; }
-    #sidebar .top-10 .info .button, #sidebar .featured-card .info .button {
-      margin: 0; }
+
+@media screen and (max-width: 47.4375em) {
+  #sidebar .featured-card img {
+    max-width: 80%; } }
 
 @media screen and (min-width: 47.5em) and (max-width: 59.9375em) {
   #sidebar .featured-card {

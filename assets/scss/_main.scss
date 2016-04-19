@@ -201,7 +201,6 @@ POSTS & CONTENT STYLES
     margin-bottom: 2rem;
     @include breakpoint(small up){
       .orbit-container {
-        background: grey;
         .orbit-slide {
           height: 75vh;
           a {
@@ -211,10 +210,13 @@ POSTS & CONTENT STYLES
             img {
               object-fit: cover;
               height: 75vh;
+              border-radius: $global-radius;
             }
           }
           .orbit-caption {
             width: auto;
+            border-bottom-right-radius: $global-radius;
+            border-top-left-radius: $global-radius;
           }
         }
       }
@@ -228,8 +230,20 @@ POSTS & CONTENT STYLES
     .fb-page,
     .fb-page span,
     .fb-page span iframe[style] {
-        width: 100% !important;
         border-radius: $global-radius;
+        display: block;
+        float: left;
+        @include breakpoint(small only) {
+          padding: 0;
+          width: 100%;
+        }
+        @include breakpoint(medium) {
+          width: 46%;
+        }
+        @include breakpoint(large up) {
+          padding: 0;
+          width: 100% !important;
+        }
     }
   }
 }
@@ -718,16 +732,14 @@ TOP 10
       margin: 0 0 .25rem;
       font-weight: bolder;
     }
-    img {
-      width: 100%;
-    }
-    .info {
-      margin: 0;
-      .button {
-        margin: 0;
-      }
-    }
   }
+  @include breakpoint(small only){
+   .featured-card {
+     img {
+       max-width: 80%;
+     }
+   }
+ }
   @include breakpoint(medium only) {
     .featured-card {
       width: 46%;
