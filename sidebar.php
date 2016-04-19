@@ -5,7 +5,7 @@
 
   <aside class="top-10 medium-6 large-12 columns">
     <h3>Top 10</h3>
-    <p>Our favorite uses of credit card points at Disney World or Disneyland.</p>
+    <p><a href="?page_id=9" title="View All">Our favorite uses of credit card points at Disney World or Disneyland.</a></p>
     <?php if( have_rows('top_10_entry', 9) ): ?>
     <ol class="top-10-list entry-content">
       <?php while( have_rows('top_10_entry', 9) ): the_row();
@@ -21,7 +21,6 @@
       <?php endif; ?>
     <?php endwhile; ?>
     </ol>
-    <p class="info"><a href="?page_id=9" title="View All" class="button">Learn More</a></p>
   <?php endif; ?>
   </aside>
 
