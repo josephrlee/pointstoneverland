@@ -4621,7 +4621,8 @@ POSTS & CONTENT STYLES
     #content #sidebar .fb-page,
     #content #sidebar .fb-page span,
     #content #sidebar .fb-page span iframe[style] {
-      width: 100% !important; }
+      width: 100% !important;
+      border-radius: 3px; }
 
 .page-title .vcard {
   border: 0;

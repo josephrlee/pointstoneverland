@@ -225,9 +225,10 @@ POSTS & CONTENT STYLES
   #sidebar {
     padding-top: 2vw;
     .fb-page,
-    .fb-page span, 
+    .fb-page span,
     .fb-page span iframe[style] {
         width: 100% !important;
+        border-radius: $global-radius;
     }
   }
 }
