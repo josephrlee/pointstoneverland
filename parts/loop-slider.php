@@ -10,9 +10,8 @@
     ?>
     <li class="orbit-slide">
       <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('full', array( 'class'	=> "orbit-image")); ?></a>
-      <figcaption class="orbit-caption large-4 columns large-push-8">
+      <figcaption class="orbit-caption large-5 columns large-push-7">
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        <p class="lead"><?php echo excerpt(20); ?></p>
       </figcaption>
     </li>
     <?php endforeach; ?>

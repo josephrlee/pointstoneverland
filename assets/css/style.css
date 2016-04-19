@@ -4602,18 +4602,20 @@ POSTS & CONTENT STYLES
       padding-top: 18vw; } }
   #content #inner-content {
     padding: 2rem 0; }
-  #content #posts-slider .orbit-container {
-    background: grey; }
-    #content #posts-slider .orbit-container .orbit-slide {
-      height: 65vh; }
-      #content #posts-slider .orbit-container .orbit-slide a {
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d; }
-        #content #posts-slider .orbit-container .orbit-slide a img {
-          object-fit: cover;
-          height: 65vh; }
-      #content #posts-slider .orbit-container .orbit-slide .orbit-caption {
-        width: auto; }
+  #content #posts-slider {
+    margin-bottom: 2rem; }
+    #content #posts-slider .orbit-container {
+      background: grey; }
+      #content #posts-slider .orbit-container .orbit-slide {
+        height: 75vh; }
+        #content #posts-slider .orbit-container .orbit-slide a {
+          -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+          #content #posts-slider .orbit-container .orbit-slide a img {
+            object-fit: cover;
+            height: 75vh; }
+        #content #posts-slider .orbit-container .orbit-slide .orbit-caption {
+          width: auto; }
   #content #main {
     padding-top: 2vw; }
   #content #sidebar {
@@ -5006,10 +5008,12 @@ TOP 10
     margin-bottom: 0; }
   #sidebar .top-10 p, #sidebar .featured-card p {
     display: block;
-    margin: .5rem 0 .25rem; }
+    margin: .5rem 0 .25rem;
+    font-weight: bolder; }
   #sidebar .top-10 ol, #sidebar .featured-card ol {
     list-style-position: inside;
-    margin: 0 0 .25rem; }
+    margin: 0 0 .25rem;
+    font-weight: bolder; }
   #sidebar .top-10 img, #sidebar .featured-card img {
     width: 100%; }
   #sidebar .top-10 .info, #sidebar .featured-card .info {
