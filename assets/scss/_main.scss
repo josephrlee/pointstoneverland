@@ -283,6 +283,9 @@ POSTS & CONTENT STYLES
   p {
     font-size: 120%;
   }
+  li {
+    font-size: 110%;
+  }
   img {
     max-width: 100%;
     margin-bottom: 1rem;
@@ -833,7 +836,7 @@ Top 10 List
       }
     }
     main {
-      p{
+      p {
         font-size: 120%;
       }
       @include breakpoint(medium up) {

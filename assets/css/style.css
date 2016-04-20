@@ -4668,6 +4668,9 @@ POSTS & CONTENT STYLES
 .entry-content p {
   font-size: 120%; }
 
+.entry-content li {
+  font-size: 110%; }
+
 .entry-content img {
   max-width: 100%;
   margin-bottom: 1rem;
