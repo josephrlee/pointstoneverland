@@ -5125,6 +5125,21 @@ Top 10 List
             max-height: 350px;
             border-top-left-radius: 2px;
             border-bottom-left-radius: 2px; } }
+      .callout .top-10-list figure figcaption {
+        position: absolute;
+        color: white;
+        background: rgba(0, 0, 0, 0.2);
+        font-size: 2rem;
+        border: solid 2px white;
+        border-radius: 100px;
+        height: 4rem;
+        width: 4rem;
+        line-height: 1.75;
+        margin: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 4rem rgba(0, 0, 0, 0.2); }
     .callout .top-10-list main p {
       font-size: 120%; }
     @media screen and (min-width: 47.5em) {

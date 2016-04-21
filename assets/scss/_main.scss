@@ -838,6 +838,22 @@ Top 10 List
         object-fit: cover;
         object-position: 50% 50%;
       }
+      figcaption {
+        position: absolute;
+        color: white;
+        background: rgba(0,0,0,.2);
+        font-size: 2rem;
+        border: solid 2px white;
+        border-radius: 100px;
+        height: 4rem;
+        width: 4rem;
+        line-height: 1.75;
+        margin: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+        box-shadow: 0 0 4rem rgba(0,0,0,.2);
+      }
     }
     main {
       p {
