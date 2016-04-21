@@ -57,6 +57,12 @@
       </table>
     <?php endwhile; ?>
   <?php endif; ?>
+
+  <?php
+    if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
+        echo do_shortcode( '[jetpack-related-posts]' );
+    }
+  ?>
   </footer> <!-- end article footer -->
 
 	<?php comments_template(); ?>
