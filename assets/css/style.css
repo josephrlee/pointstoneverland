@@ -5139,7 +5139,7 @@ Vacation
         @media screen and (min-width: 60em) {
           .callout .top-10-list figure img,
           .callout .vacation-tips figure img {
-            height: 320px;
+            height: 330px;
             max-height: 350px;
             border-top-left-radius: 2px;
             border-bottom-left-radius: 2px; } }
