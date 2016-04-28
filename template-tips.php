@@ -35,12 +35,12 @@ Template Name: Vacation Planning Tips
             $url = get_sub_field('post_url');
             ?>
             <div class="callout">
-              <section class="top-10-list row">
-                <figure class="column medium-5 large-4 full">
+              <section class="vacation-tips row">
+                <figure class="column large-5 full">
                   <figcaption><?php echo $ctr; ?></figcaption>
                   <?php if ($image): ?><img class="size-medium" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/><?php endif; ?>
                 </figure>
-                <main class="column medium-7 large-8">
+                <main class="column large-7">
                   <h3><?php echo $title; ?></h3>
                   <?php echo $tip; ?>
                   <?php if ($url): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
