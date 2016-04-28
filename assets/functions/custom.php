@@ -88,7 +88,7 @@ function comment_count( $count ) {
 	return $comment_count;
 }
 
-// Removed Jetpack related posts 
+// Removed Jetpack related posts
 
 function jetpackme_remove_rp() {
     if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
@@ -98,3 +98,13 @@ function jetpackme_remove_rp() {
     }
 }
 add_filter( 'wp', 'jetpackme_remove_rp', 20 );
+
+// Disable internal pinbacks
+
+function disable_self_trackback( &$links ) {
+  foreach ( $links as $l => $link )
+        if ( 0 === strpos( $link, get_option( 'home' ) ) )
+            unset($links[$l]);
+}
+
+add_action( 'pre_ping', 'disable_self_trackback' );
