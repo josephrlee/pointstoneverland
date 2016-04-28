@@ -2064,12 +2064,12 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  color: #9ECCD4;
+  color: #93c6cf;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #7ab9c4; }
+    color: #71b4c0; }
   a img {
     border: 0; }
 
@@ -3080,7 +3080,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: #9ECCD4 transparent transparent;
+  border-color: #93c6cf transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
   right: 5px;
@@ -3113,7 +3113,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #9ECCD4 transparent transparent;
+  border-color: transparent #93c6cf transparent transparent;
   border-right-style: solid;
   border-left-width: 0; }
 
@@ -3123,7 +3123,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #9ECCD4;
+  border-color: transparent transparent transparent #93c6cf;
   border-left-style: solid;
   border-right-width: 0; }
 
@@ -3145,7 +3145,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #9ECCD4 transparent transparent;
+    border-color: #93c6cf transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -3167,7 +3167,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #9ECCD4 transparent transparent;
+    border-color: transparent #93c6cf transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.medium-vertical > li.opens-right > a::after {
@@ -3176,7 +3176,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #9ECCD4;
+    border-color: transparent transparent transparent #93c6cf;
     border-left-style: solid;
     border-right-width: 0; } }
 
@@ -3198,7 +3198,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #9ECCD4 transparent transparent;
+    border-color: #93c6cf transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -3220,7 +3220,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #9ECCD4 transparent transparent;
+    border-color: transparent #93c6cf transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.large-vertical > li.opens-right > a::after {
@@ -3229,7 +3229,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #9ECCD4;
+    border-color: transparent transparent transparent #93c6cf;
     border-left-style: solid;
     border-right-width: 0; } }
 
@@ -3251,7 +3251,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #9ECCD4 transparent transparent;
+    border-color: #93c6cf transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -3273,7 +3273,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #9ECCD4 transparent transparent;
+    border-color: transparent #93c6cf transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.xlarge-vertical > li.opens-right > a::after {
@@ -3282,7 +3282,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #9ECCD4;
+    border-color: transparent transparent transparent #93c6cf;
     border-left-style: solid;
     border-right-width: 0; } }
 
@@ -3328,7 +3328,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #9ECCD4 transparent transparent;
+    border-color: transparent #93c6cf transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
@@ -3337,7 +3337,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #9ECCD4;
+    border-color: transparent transparent transparent #93c6cf;
     border-left-style: solid;
     border-right-width: 0; }
   .is-dropdown-submenu > li {
@@ -5144,7 +5144,8 @@ Top 10 List
       font-size: 120%; }
     @media screen and (min-width: 47.5em) {
       .callout .top-10-list main {
-        padding-top: 2em; } }
+        padding-top: 2em;
+        padding-bottom: 2em; } }
     .callout .top-10-list main p:last-child {
       margin: 0; }
 
