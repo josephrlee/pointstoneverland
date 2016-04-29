@@ -122,7 +122,7 @@ NAVIGATION STYLES
             }
             li a {
                 border: solid 1px lighten($primary-color, 10%);
-                margin-right: 6px;
+                margin-right: 5px;
                 border-radius: $global-radius;
                 background: rgba($body-background, .4);
                 font-weight: bold;
@@ -132,16 +132,20 @@ NAVIGATION STYLES
             }
             .is-dropdown-submenu {
                 left: 0;
-                top: 3rem;
+                top: 2.75rem;
+                padding: .5rem 0;
                 margin-left: 0 !important;
                 border-radius: $global-radius;
-                background: rgba($body-background, .8);
+                background: rgba($body-background, .9);
                 a {
                     border: none;
                 }
                 .is-dropdown-submenu-item a {
                     margin-right: 0;
                 }
+              &:hover {
+                display: block;
+              }
             }
         }
     }
