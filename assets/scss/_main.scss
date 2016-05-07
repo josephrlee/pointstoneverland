@@ -235,6 +235,9 @@ POSTS & CONTENT STYLES
     }
     #main {
         padding-top: 2vw;
+        article:first-of-type {
+
+        }
     }
     #sidebar {
         padding-top: 2vw;
@@ -763,6 +766,22 @@ TOP 10
             float: right;
         }
     }
+  .survey {
+    margin-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    @include breakpoint(medium only) {
+      padding-right: 0;
+      padding-left: 1.875rem;
+    }
+    @include breakpoint(large up) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .button {
+      width: 100%;
+    }
+  }
 }
 /*********************
 CREIDT CARD STYLES
