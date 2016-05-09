@@ -2032,19 +2032,19 @@ h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 1.5rem; }
+  font-size: 2.25rem; }
 
 h2 {
-  font-size: 1.25rem; }
+  font-size: 1.875rem; }
 
 h3 {
-  font-size: 1.1875rem; }
+  font-size: 1.5rem; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 1.3125rem; }
 
 h5 {
-  font-size: 1.0625rem; }
+  font-size: 1.125rem; }
 
 h6 {
   font-size: 1rem; }
@@ -4663,7 +4663,8 @@ POSTS & CONTENT STYLES
 .home .entry-content img {
   height: 50vw;
   object-fit: cover;
-  object-position: 50% 50%; }
+  object-position: 50% 50%;
+  width: 100%; }
   @media screen and (min-width: 47.5em) and (max-width: 59.9375em) {
     .home .entry-content img {
       height: 50vw;
@@ -4675,6 +4676,9 @@ POSTS & CONTENT STYLES
 
 .entry-content p {
   font-size: 120%; }
+
+.entry-content p:last-of-type {
+  margin-bottom: 2rem; }
 
 .entry-content li {
   font-size: 110%;

@@ -283,6 +283,7 @@ POSTS & CONTENT STYLES
         height: 50vw;
         object-fit: cover;
         object-position: 50% 50%;
+        width: 100%;
         @include breakpoint(medium only) {
             height: 50vw;
             object-position: 50% 100%;
@@ -296,6 +297,9 @@ POSTS & CONTENT STYLES
 .entry-content {
     p {
         font-size: 120%;
+    }
+    p:last-of-type {
+      margin-bottom: 2rem;
     }
     li {
         font-size: 110%;
