@@ -904,14 +904,10 @@ Vacation
     }
     .vacation-tips figure {
       img {
-          max-height: 300px;
-          @include breakpoint(medium up) {
-              max-height: 450px;
-              height: 420px;
-          }
+
           @include breakpoint(large up) {
-              height: 550px;
-              max-height: 550px;
+              height: 620px;
+              max-height: 620px;
           }
       }
     }

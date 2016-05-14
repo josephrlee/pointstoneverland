@@ -5189,16 +5189,10 @@ Vacation
       .callout .vacation-tips main {
         padding-top: 2em;
         padding-bottom: 2em; } }
-  .callout .vacation-tips figure img {
-    max-height: 300px; }
-    @media screen and (min-width: 47.5em) {
-      .callout .vacation-tips figure img {
-        max-height: 450px;
-        height: 420px; } }
-    @media screen and (min-width: 60em) {
-      .callout .vacation-tips figure img {
-        height: 550px;
-        max-height: 550px; } }
+  @media screen and (min-width: 60em) {
+    .callout .vacation-tips figure img {
+      height: 620px;
+      max-height: 620px; } }
   @media screen and (min-width: 47.5em) {
     .callout .top-10-list main {
       padding-top: 2em;
