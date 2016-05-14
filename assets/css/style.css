@@ -5161,8 +5161,8 @@ Vacation
         @media screen and (min-width: 60em) {
           .callout .top-10-list figure img,
           .callout .vacation-tips figure img {
-            height: 330px;
-            max-height: 350px;
+            height: 370px;
+            max-height: 370px;
             border-top-left-radius: 2px;
             border-bottom-left-radius: 2px; } }
       .callout .top-10-list figure figcaption,
@@ -5189,6 +5189,16 @@ Vacation
       .callout .vacation-tips main {
         padding-top: 2em;
         padding-bottom: 2em; } }
+  .callout .vacation-tips figure img {
+    max-height: 300px; }
+    @media screen and (min-width: 47.5em) {
+      .callout .vacation-tips figure img {
+        max-height: 450px;
+        height: 420px; } }
+    @media screen and (min-width: 60em) {
+      .callout .vacation-tips figure img {
+        height: 550px;
+        max-height: 550px; } }
   @media screen and (min-width: 47.5em) {
     .callout .top-10-list main {
       padding-top: 2em;
