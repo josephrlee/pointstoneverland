@@ -5233,21 +5233,25 @@ Styleguide
   line-height: 1.2;
   margin-bottom: 5px;
   text-align: center; }
-  .colors li p .color-preview {
-    height: 120px;
-    width: 120px;
-    padding: 0;
-    margin: 0 auto 10px;
-    display: block;
-    border-radius: 80px;
-    background-color: #ddd;
-    font-size: 0; }
-  .colors li p .blue {
-    background-color: #9eccd4; }
-  .colors li p .yellow {
-    background-color: #fddd48; }
-  .colors li p .grey {
-    background-color: #37323e; }
+
+.colors li .color-preview {
+  height: 120px;
+  width: 120px;
+  padding: 0;
+  margin: 0 auto 10px;
+  display: block;
+  border-radius: 80px;
+  background-color: #ddd;
+  font-size: 0; }
+
+.colors li .blue {
+  background-color: #9eccd4; }
+
+.colors li .yellow {
+  background-color: #fddd48; }
+
+.colors li .grey {
+  background-color: #37323e; }
 
 .banner {
   width: 100%;

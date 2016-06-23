@@ -950,11 +950,13 @@ Styleguide
   float: left;
   width: 33%;
 }
-.colors li p {
-  font-size: small;
-  line-height: 1.2;
-  margin-bottom: 5px;
-  text-align: center;
+.colors li {
+  p {
+    font-size: small;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    text-align: center;
+  }
   .color-preview {
     height: 120px;
     width: 120px;
