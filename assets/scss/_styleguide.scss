@@ -13,34 +13,34 @@
   display: block;
   float: left;
   width: 33%;
-  .color-preview {
-    height: 120px;
-    width: 120px;
-    padding: 0;
-    margin: 0 auto 10px;
-    display: block;
-    border-radius: 80px;
-    background-color: #ddd;
-    font-size: 0;
-  }
-  .blue {
-    @extend .color-preview;
-    background-color: #9eccd4;
-  }
-  .yellow {
-    @extend .color-preview;
-    background-color: #fddd48;
-  }
-  .grey {
-    @extend .color-preview;
-    background-color: #37323e;
-  }
 }
 .colors li p {
   font-size: small;
   line-height: 1.2;
   margin-bottom: 5px;
   text-align: center;
+}
+.color-preview {
+  height: 120px;
+  width: 120px;
+  padding: 0;
+  margin: 0 auto 10px;
+  display: block;
+  border-radius: 80px;
+  background-color: #ddd;
+  font-size: 0;
+}
+.blue {
+  @extend .color-preview;
+  background-color: #9eccd4;
+}
+.yellow {
+  @extend .color-preview;
+  background-color: #fddd48;
+}
+.grey {
+  @extend .color-preview;
+  background-color: #37323e;
 }
 .banner {
   width: 100%;
