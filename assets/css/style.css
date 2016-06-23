@@ -4555,7 +4555,7 @@ NAVIGATION STYLES
       .top-bar .top-bar-right .primary-menu .is-dropdown-submenu {
         left: 0;
         top: 2.75rem;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         margin-left: 0 !important;
         border-radius: 3px;
         background: rgba(228, 249, 254, 0.9); }
@@ -5209,91 +5209,95 @@ Hotel Maps
   .page-id-24 .flex-video iframe {
     border: solid 1px #e6e6e6; }
 
-.logo {
+/*********************
+Styleguide
+*********************/
+#page-id-2060 #main .logo {
   width: 40%; }
 
-.icon {
+#page-id-2060 .icon {
   width: 128px; }
 
-.colors {
+#page-id-2060 .colors {
   list-style: none;
   width: 100%;
   display: inline-block; }
 
-.colors li {
+#page-id-2060 .colors li {
   display: block;
   float: left;
   width: 33%; }
 
-.colors li .color-preview {
+#page-id-2060 .colors li p {
+  font-size: small;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  text-align: center; }
+
+#page-id-2060 .color-preview {
   height: 120px;
   width: 120px;
   padding: 0;
   margin: 0 auto 10px;
   display: block;
   border-radius: 80px;
-  background-color: #ddd; }
+  background-color: #ddd;
+  font-size: 0; }
 
-.colors li p {
-  font-size: small;
-  line-height: 1.2;
-  margin-bottom: 5px;
-  text-align: center; }
+#page-id-2060 .blue {
+  background-color: #9eccd4; }
 
-.banner {
+#page-id-2060 .yellow {
+  background-color: #fddd48; }
+
+#page-id-2060 .grey {
+  background-color: #37323e; }
+
+#page-id-2060 .banner {
   width: 100%;
   border: solid 1px #ddd; }
 
-.title {
+#page-id-2060 .title {
   font-size: 40px;
   font-weight: bold; }
 
-.bold,
-.italic,
-.light,
-.medium,
-.normal,
-.semibold {
+#page-id-2060 .bold,
+#page-id-2060 .italic,
+#page-id-2060 .light,
+#page-id-2060 .medium,
+#page-id-2060 .normal,
+#page-id-2060 .semibold {
   font-family: "Archer SSm A", "Archer SSm B";
   font-size: 36px;
   line-height: 30px; }
 
-.light {
+#page-id-2060 .light {
   font-weight: 400; }
 
-.italic {
+#page-id-2060 .italic {
   font-style: italic; }
 
-.normal {
+#page-id-2060 .normal {
   font-weight: 500; }
 
-.medium {
+#page-id-2060 .medium {
   font-weight: 600; }
 
-.semibold {
+#page-id-2060 .semibold {
   font-weight: 700; }
 
-.bold {
+#page-id-2060 .bold {
   font-weight: 800; }
 
-.weights {
+#page-id-2060 .weights {
   letter-spacing: 2px;
-  font-size: 13px;
   color: #adadad;
   margin-bottom: 35px;
   border-width: 0 0 1px 0;
   border-style: dotted;
   margin-top: 45px; }
 
-.pullquote {
-  font-size: 17px;
-  line-height: 26px;
-  margin-bottom: 35px;
-  padding-left: 15px;
-  border-width: 0 0 0 3px;
-  border-style: solid; }
-
-.map {
+#page-id-2060 .map {
   font-weight: 400;
   font-style: normal;
   margin-bottom: 0;
@@ -5302,7 +5306,7 @@ Hotel Maps
   line-height: 54px;
   margin-top: 0; }
 
-.heading {
+#page-id-2060 .heading {
   letter-spacing: 2px;
   font-size: 13px;
   margin-bottom: 35px;
@@ -5311,32 +5315,32 @@ Hotel Maps
   margin-top: 45px;
   color: black; }
 
-.intro {
+#page-id-2060 .intro {
   margin-bottom: 35px;
   font-size: 21px;
   line-height: 28px; }
 
-.inverse-big {
+#page-id-2060 .inverse-big {
   background-color: #37323E;
   color: white;
   padding: 30px;
   margin: 0; }
 
-.inverse-med {
+#page-id-2060 .inverse-med {
   background-color: #37323E;
   color: white;
   padding: 0 30px 30px;
   margin: 0;
   font-size: 15px; }
 
-.inverse-small {
+#page-id-2060 .inverse-small {
   padding: 0 30px 30px;
   margin: 0;
   background-color: #37323E;
   color: white;
   font-size: 13px; }
 
-.inverse-heading {
+#page-id-2060 .inverse-heading {
   background-color: #37323E;
   color: white;
   padding: 30px;
