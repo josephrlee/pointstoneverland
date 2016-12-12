@@ -43,7 +43,7 @@ Template Name: Top 10
                 </figure>
                 <main class="column medium-6 large-7">
                   <h3><?php echo $title; ?></h3>
-                  <p><strong>What It Takes:</strong> <?php echo $what_it_takes; ?></p>
+                  <p><strong>How It Works:</strong> <?php echo $what_it_takes; ?></p>
                   <p><strong>Savings:</strong> $<?php echo $value; ?></p>
                   <?php if ($url): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
                 </main>
