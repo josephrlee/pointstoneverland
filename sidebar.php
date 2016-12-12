@@ -44,10 +44,8 @@
     <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pointstoneverland/"><a href="https://www.facebook.com/pointstoneverland/">Points to Neverland</a></blockquote></div>
   </aside>
 
-  <aside class="survey medium-6 large-12 columns">
-    <a class="typeform-share large button" href="https://pointstoneverland.typeform.com/to/ayCQBO" data-mode="1" target="_blank">Fill Out The Survey!</a>
-    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
+  <aside class="affiliate-msg medium-6 large-12 columns">
+    <p>Support Points to Neverland by using a <a href="/popular-cards/" title="View the cards now">link from our site</a> to apply for your next credit card.</p>
   </aside>
   <?php else : ?>
 
