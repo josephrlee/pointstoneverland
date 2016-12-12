@@ -55,7 +55,7 @@ Template Name: Popular Cards
                   <td class="card-image">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
                     <?php if( $apply ): ?><p><a href="<?php echo $apply; ?>" title="Read More" class="button ">Apply Now</a></p><?php endif; ?>
-                      <?php if( $url ): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Learn More</a></p><?php endif; ?>
+                      <?php if( $url ): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Read Review</a></p><?php endif; ?>
                   </td>
                   <td class="card-details">
                     <ul>
