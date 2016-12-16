@@ -17,7 +17,7 @@ place.
               background-image: url('#{$img-path}/hero-banner-large.jpg');
             }
             @include breakpoint(large up) {
-              background-image: url('#{$img-path}/hero-banner@2x.jpg');
+              background-image: url('#{$img-path}/hero-banner@2x-alt.jpg');
             }
           }
         }

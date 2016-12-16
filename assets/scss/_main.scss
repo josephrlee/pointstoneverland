@@ -18,7 +18,7 @@ $img-path: "/wp-content/themes/pointstoneverland/assets/images"; // Image path f
     background-image: url('#{$img-path}/hero-banner-medium.jpg');
   }
   @include breakpoint(large up) {
-    background-image: url('#{$img-path}/hero-banner-large.jpg');
+    background-image: url('#{$img-path}/hero-banner-large-alt.jpg');
   }
 }
 .off-canvas-wrapper {
@@ -95,7 +95,7 @@ NAVIGATION STYLES
     display: block;
     padding: 0.5rem;
     @include breakpoint(medium up) {
-      padding: 0.7rem 1rem;
+      padding: 0.75rem 0 .75rem 1.25rem;
     }
     img {
       width: 24vw;
@@ -118,11 +118,14 @@ NAVIGATION STYLES
         padding-right: 12vw;
       }
       @include breakpoint(large up) {
-        padding-right: 28vw;
+        padding-right: 14vw;
+      }
+      @include breakpoint(xlarge up) {
+        padding-right: 19vw;
       }
       li a {
         border: solid 1px lighten($primary-color, 10%);
-        margin-right: 5px;
+        margin-right: .5rem;
         border-radius: $global-radius;
         background: rgba($body-background, .4);
         font-weight: bold;
@@ -149,16 +152,21 @@ NAVIGATION STYLES
       }
     }
   }
-  @include breakpoint(small down) {
+  @include breakpoint(large down) {
     #menu-primary-navigation {
       display: none;
     }
   }
 }
+@include breakpoint(medium up) {
+  .menu > li > a {
+    padding: 0.75rem  1.25rem .75rem .25rem
+  }
+}
 .off-canvas {
   padding: 1rem;
   .menu > li > a {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem  1.25rem .75rem .25rem;
     font-size: calc(18px);
   }
   .search-form {
@@ -195,42 +203,61 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  padding-top: 8vw;
+  padding-top: 6vw;
   @include breakpoint(medium up) {
-    padding-top: 12vw;
+    padding-top: 4vw;
+    #inner-content {
+      padding: 2vw 0;
+    }
   }
   @include breakpoint(large up) {
-    padding-top: 16vw;
+    padding-top: 6vw;
+    #inner-content {
+      padding: 1vw 0;
+    }
   }
   @include breakpoint(xlarge up) {
-    padding-top: 18vw;
+    padding-top: 8vw;
+    #inner-content {
+      padding: 2vw 0;
+    }
   }
-  #inner-content {
-    padding: 2rem 0;
-  }
+
   #posts-slider {
+    margin-top: 2vw;
     margin-bottom: 2rem;
     @include breakpoint(small up) {
       .orbit-container {
         .orbit-slide {
-          height: 75vh;
+          height: 60vh;
           a {
             -webkit-transform-style: preserve-3d;
             -moz-transform-style: preserve-3d;
             transform-style: preserve-3d;
             img {
               object-fit: cover;
-              height: 75vh;
+              height: 60vh;
               border-radius: $global-radius;
             }
           }
           .orbit-caption {
-            width: auto;
             border-bottom-right-radius: $global-radius;
             border-top-left-radius: $global-radius;
+            h2 {
+              margin: 0;
+            }
           }
         }
       }
+    }
+    @include breakpoint(medium up) {
+      margin-top: 6vw;
+    }
+    @include breakpoint(large up) {
+      margin-top: 4vw;
+    }
+    @include breakpoint(xlarge up) {
+      margin-top: 2vw;
     }
   }
   #main {
@@ -602,10 +629,76 @@ RELATED POSTS
   border-top: none !important;
 }
 /*********************
-SIDEBARS & ASIDES
+SIDEBAR & ASIDES
 *********************/
-#searchsubmit {}
-.widgettitle {}
+#sidebar {
+  .featured-card,
+  .top-10 {
+    border: solid 1px darken($body-background, 1%);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: $global-radius;
+    background: lighten($body-background, 2%);
+    h3 {
+      margin-bottom: 0;
+    }
+    p {
+      display: block;
+      margin: 0.5rem 0 0.25rem;
+      font-weight: bolder;
+    }
+    ol {
+      list-style-position: inside;
+      margin: 0 0 0.25rem;
+      font-weight: bolder;
+    }
+  }
+  @include breakpoint(small only) {
+    .featured-card {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+  @include breakpoint(medium only) {
+    .featured-card {
+      width: 46%;
+      float: right;
+    }
+  }
+  .survey {
+    margin-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    @include breakpoint(medium only) {
+      padding-right: 0;
+      padding-left: 1.875rem;
+    }
+    @include breakpoint(large up) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+  .affiliate-msg {
+    padding: 0;
+    @include breakpoint(medium up) {
+      padding-right: 0;
+      padding-left: 1.875rem;
+    }
+    @include breakpoint(large up) {
+      padding: 0;
+    }
+    margin-top: 2rem;
+    p {
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: -.25px;
+    }
+  }
+}
 .widget {
   ul {
     margin: 0;
@@ -729,61 +822,6 @@ PLUGIN STYLES
 .gform_body ul {
   list-style: none outside none;
   margin: 0;
-}
-/*********************
-TOP 10
-*********************/
-#sidebar {
-  .featured-card,
-  .top-10 {
-    border: solid 1px darken($body-background, 1%);
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-radius: $global-radius;
-    background: lighten($body-background, 2%);
-    h3 {
-      margin-bottom: 0;
-    }
-    p {
-      display: block;
-      margin: 0.5rem 0 0.25rem;
-      font-weight: bolder;
-    }
-    ol {
-      list-style-position: inside;
-      margin: 0 0 0.25rem;
-      font-weight: bolder;
-    }
-  }
-  @include breakpoint(small only) {
-    .featured-card {
-      img {
-        max-width: 80%;
-      }
-    }
-  }
-  @include breakpoint(medium only) {
-    .featured-card {
-      width: 46%;
-      float: right;
-    }
-  }
-  .survey {
-    margin-top: 2rem;
-    padding-left: 0;
-    padding-right: 0;
-    @include breakpoint(medium only) {
-      padding-right: 0;
-      padding-left: 1.875rem;
-    }
-    @include breakpoint(large up) {
-      padding-right: 0;
-      padding-left: 0;
-    }
-    .button {
-      width: 100%;
-    }
-  }
 }
 /*********************
 CREIDT CARD STYLES
