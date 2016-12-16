@@ -4435,6 +4435,9 @@ POSTS & CONTENT STYLES
       #content #posts-slider .orbit-container .orbit-slide .orbit-caption {
         border-bottom-right-radius: 3px;
         border-top-left-radius: 3px; }
+        @media screen and (min-width: 60em) {
+          #content #posts-slider .orbit-container .orbit-slide .orbit-caption {
+            width: auto; } }
         #content #posts-slider .orbit-container .orbit-slide .orbit-caption h2 {
           margin: 0; }
     @media screen and (min-width: 47.5em) {

@@ -243,6 +243,9 @@ POSTS & CONTENT STYLES
           .orbit-caption {
             border-bottom-right-radius: $global-radius;
             border-top-left-radius: $global-radius;
+            @include breakpoint(large up) {
+              width: auto;
+            }
             h2 {
               margin: 0;
             }
