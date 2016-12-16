@@ -2,7 +2,7 @@
   <ul class="orbit-container">
     <li class="orbit-slide">
       <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('full', array( 'class'	=> "orbit-image")); ?></a>
-      <figcaption class="orbit-caption large-5 columns large-push-7">
+      <figcaption class="orbit-caption large-6 columns large-push-6">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       </figcaption>
     </li>
