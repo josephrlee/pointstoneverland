@@ -4969,43 +4969,43 @@ Vacation
 .callout {
   padding: 0;
   margin-bottom: 2rem; }
-  .callout .disney-gift-cards,
+  .callout .disney-gift-cards, .callout .top-10-list,
   .callout .vacation-tips {
     overflow: hidden;
     padding-top: 0; }
-    .callout .disney-gift-cards figure,
+    .callout .disney-gift-cards figure, .callout .top-10-list figure,
     .callout .vacation-tips figure {
       padding: 0;
       margin: 0; }
       @media screen and (max-width: 47.4375em) {
-        .callout .disney-gift-cards figure,
+        .callout .disney-gift-cards figure, .callout .top-10-list figure,
         .callout .vacation-tips figure {
           padding: 0;
           margin: 0 -1em 2em;
           width: 110%; } }
       @media screen and (min-width: 47.5em) {
-        .callout .disney-gift-cards figure,
+        .callout .disney-gift-cards figure, .callout .top-10-list figure,
         .callout .vacation-tips figure {
           margin: 0; } }
-      .callout .disney-gift-cards figure img,
+      .callout .disney-gift-cards figure img, .callout .top-10-list figure img,
       .callout .vacation-tips figure img {
         max-height: 300px;
         width: 100%;
         object-fit: cover;
         object-position: 50% 50%; }
         @media screen and (min-width: 47.5em) {
-          .callout .disney-gift-cards figure img,
+          .callout .disney-gift-cards figure img, .callout .top-10-list figure img,
           .callout .vacation-tips figure img {
             max-height: 450px;
             height: 420px; } }
         @media screen and (min-width: 60em) {
-          .callout .disney-gift-cards figure img,
+          .callout .disney-gift-cards figure img, .callout .top-10-list figure img,
           .callout .vacation-tips figure img {
             height: 370px;
             max-height: 370px;
             border-top-left-radius: 2px;
             border-bottom-left-radius: 2px; } }
-      .callout .disney-gift-cards figure figcaption,
+      .callout .disney-gift-cards figure figcaption, .callout .top-10-list figure figcaption,
       .callout .vacation-tips figure figcaption {
         position: absolute;
         color: white;
@@ -5021,11 +5021,11 @@ Vacation
         text-align: center;
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 0 4rem rgba(0, 0, 0, 0.2); }
-    .callout .disney-gift-cards main p,
+    .callout .disney-gift-cards main p, .callout .top-10-list main p,
     .callout .vacation-tips main p {
       font-size: 120%; }
     @media screen and (min-width: 47.5em) {
-      .callout .disney-gift-cards main,
+      .callout .disney-gift-cards main, .callout .top-10-list main,
       .callout .vacation-tips main {
         padding-top: 2em;
         padding-bottom: 2em; } }
@@ -5034,10 +5034,10 @@ Vacation
       height: 620px;
       max-height: 620px; } }
   @media screen and (min-width: 47.5em) {
-    .callout .disney-gift-cards main {
+    .callout .disney-gift-cards main, .callout .top-10-list main {
       padding-top: 2em;
       padding-bottom: 2em; } }
-  .callout .disney-gift-cards main p:last-child {
+  .callout .disney-gift-cards main p:last-child, .callout .top-10-list main p:last-child {
     margin: 0; }
 
 /*********************
