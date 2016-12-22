@@ -36,7 +36,7 @@ Template Name: Disney Gift Cards
             $url = get_sub_field('post_url');
             ?>
             <div class="callout">
-              <section class="top-10-list row">
+              <section class="disney-gift-cards row">
                 <figure class="column medium-6 large-5 full">
                   <figcaption><?php echo $ctr; ?></figcaption>
                   <?php if ($image): ?><img class="size-medium" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/><?php endif; ?>
