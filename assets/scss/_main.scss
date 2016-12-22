@@ -1049,7 +1049,7 @@ Vacation
   padding: 0;
   margin-bottom: 2rem;
 
-  .disney-gift-cards,
+  .disney-gift-cards, .top-10-list,
   .vacation-tips {
     overflow: hidden;
     padding-top: 0;
@@ -1121,7 +1121,7 @@ Vacation
     }
   }
 
-  .disney-gift-cards {
+  .disney-gift-cards, .top-10-list {
     main {
       @include breakpoint(medium up) {
         padding-top: 2em;
