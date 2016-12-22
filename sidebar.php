@@ -4,11 +4,11 @@
   <?php dynamic_sidebar('sidebar'); ?>
 
   <aside class="top-10 medium-6 large-12 columns">
-    <h3>Top 10 Ways To Save</h3>
-    <p><a href="?page_id=9" title="View All">Our favorite uses of credit card points at Disney World or Disneyland.</a></p>
-    <?php if( have_rows('top_10_entry', 9) ): ?>
-    <ol class="top-10-list entry-content">
-      <?php while( have_rows('top_10_entry', 9) ): the_row();
+    <h3>Disney Gift Cards</h3>
+    <p><a href="?page_id=3827" title="View All">Here are our favorite ways to save on Disney gift cards.</a></p>
+    <?php if( have_rows('disney_gift_card_entry', 3827) ): ?>
+    <ol class="disney-gift-cards entry-content">
+      <?php while( have_rows('disney_gift_card_entry', 3827) ): the_row();
       // vars
       $title = get_sub_field('title');
       $url = get_sub_field('post_url');
@@ -45,7 +45,7 @@
   </aside>
 
   <aside class="affiliate-msg medium-6 large-12 columns">
-    <p>Support Points to Neverland by using a <a href="/popular-cards/" title="View the cards now">link from our site</a> to apply for your next credit card.</p>
+    <p>Support Points to Neverland by using a link from our site to apply for your next credit card.</p>
   </aside>
   <?php else : ?>
 

@@ -43,8 +43,8 @@ Template Name: Disney Gift Cards
                 </figure>
                 <main class="column medium-6 large-7">
                   <h3><?php echo $title; ?></h3>
-                  <p><strong>Savings:</strong> $<?php echo $savings; ?></p>
-                  <p><strong>Credit Card(s) Required:</strong> <?php echo $cards; ?></p>
+                  <?php if ($savings): ?><p><strong>Savings:</strong> <?php echo $savings; ?></p><?php endif; ?>
+                  <?php if ($cards): ?><p><strong>Credit Card(s) Required:</strong> <?php echo $cards; ?></p><?php endif; ?>
                   <?php if ($url): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
                 </main>
               </section>
