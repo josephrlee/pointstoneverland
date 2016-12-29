@@ -42,9 +42,9 @@ Template Name: Top 10
                   <?php if ($image): ?><img class="size-medium" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/><?php endif; ?>
                 </figure>
                 <main class="column medium-6 large-7">
-                  <h3><?php echo $title; ?></h3>
-                  <p><strong>How It Works:</strong> <?php echo $what_it_takes; ?></p>
-                  <p><strong>Savings:</strong> $<?php echo $value; ?></p>
+                  <?php if ($title): ?><h3><?php echo $title; ?></h3><?php endif; ?>
+                  <?php if ($what_it_takes): ?><p><strong>How It Works:</strong> <?php echo $what_it_takes; ?></p><?php endif; ?>
+                  <?php if ($savings): ?><p><strong>Savings:</strong> $<?php echo $value; ?></p><?php endif; ?>
                   <?php if ($url): ?><p><a href="<?php echo $url; ?>" title="Read More" class="button">Read More</a></p><?php endif; ?>
                 </main>
               </section>
